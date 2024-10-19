@@ -5,11 +5,25 @@
     text-align: center;
 }
 
+.about_title2 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #012B28;
+    text-align: center;
+}
+
 .about_info {
     font-size: 20px;
     font-weight: 500;
     color: #787373;
     text-align: center;
+}
+
+.about_info2 {
+    font-size: 34px;
+    /* font-weight: 600; */
+    color: #012B28;
+    text-align: left;
 }
 
 .about_main_container {
@@ -42,4 +56,28 @@ max-width: 1280px;
     flex-wrap: wrap;
     max-width: 1280px;
     padding: 20px 0;
+}
+
+.about_sub_lower2_container {
+    margin-top: 30px;
+    padding: 50px 0;
+}
+
+.whycard_container {
+    max-width: 1280px;
+    display: flex;
+    padding-top: 30px;
+}
+
+.about_sub_lower3_container {
+    width: 100%;
+    background-color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.sub_lower3_bg {
+    max-width: 1280px;
+    text-align: center;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import styles from "../styles/About.module.css";
 import AboutCard from "../components/AboutCard";
+import WhyCard from "../components/WhyCard";
 
 const instructors = [
     {
@@ -29,6 +30,24 @@ const instructors = [
     }
 ]
 
+const whycards = [{
+        title: "PROVEN TRACK RECORD",
+        info: "Each instructor has a high success rate in coaching students to pass their certification exams."
+    },
+    {
+        title: "REAL-WORLD EXPERIENCE",
+        info: "Our team has worked in various healthcare settings across Canada, bringing valuable insights into Canadian healthcare practices."
+    },
+    {
+        title: "PATIENT & SUPPORTIVE",
+        info: "We provide a supportive and engaging learning environment where no question goes unanswered."
+    },
+    {
+        title: "EXAM-FOCUSED",
+        info: "Our instructors stay up-to-date with the latest exam trends and ensure you’re equipped with the knowledge and strategies to pass on the first try."
+    }
+]
+
 const About = () => {
     return (
         <section className={styles.about_main_container}>
@@ -47,11 +66,26 @@ const About = () => {
                                 <AboutCard key={instructor+idx} instructor={instructor}/>
                             ))
                         }
-                        {/* <AboutCard/>
-                        <AboutCard/>
-                        <AboutCard/>
-                        <AboutCard/> */}
                     </div>
+                </div>
+            </div>
+            <div className={styles.about_sub_lower2_container}>
+                <p className={styles.about_title2}>What Makes Our Instructors Stand Out</p>
+                <div className={styles.whycard_container}>
+                    {
+                        whycards.map((item,idx) => (
+                            <WhyCard key={item+idx} cardInfo={item} />
+                        ))
+                    }
+                </div>
+            </div>
+
+            <div className={styles.about_sub_lower3_container}>
+                <div className={styles.sub_lower3_bg}>
+                    <p className={styles.about_info2}>
+                    Join the hundreds of successful IEN&apos;s who&apos;ve trusted 
+                    <b> Footprints Nursing Review Center</b> to guide them to their Canadian nursing career. <b>Your future in healthcare starts here.</b>
+                    </p>
                 </div>
             </div>
         </section>
