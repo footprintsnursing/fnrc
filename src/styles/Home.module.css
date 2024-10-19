@@ -1,0 +1,135 @@
+.title1 {
+    color: #FFBD59;
+    font-size: 36px;
+    font-weight: 500;
+ }
+
+.title2 {
+    font-size: 40px;
+    color: #012B28;
+    font-weight: 600;
+}
+
+.title3 {
+    font-size: 36px;
+    color: #012B28;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+.info1 {
+    font-size: 20px;
+ }
+
+.info2 {
+    font-size: 20px;
+    color: #787373;
+    font-weight: 500;
+}
+
+hr{
+    width: 80%;
+    background-color: #FFEAC0;
+    height: 3px;
+    border: none;
+}
+
+
+.home_main_container {
+    height: 100%;
+}
+
+.home_first_sub_container {
+    background-color: #fff;
+    /* display: flex;
+    justify-content: center; */
+    text-align: center;
+    padding: 20px 10px;
+    line-height: 2;
+}
+
+.first_container {
+    max-width: 1280px;
+}
+
+.home_second_sub_container {
+    background-color: #012B28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.second_container {
+    max-width: 1280px;
+    text-align: left;
+}
+
+.card_container {
+    max-width: 1280px;
+}
+
+
+.home_third_sub_container {
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+
+.third_container {
+    max-width: 1280px;
+}
+
+
+.third_card_container {
+    display: flex;
+    gap: 46px;
+}
+
+.third_img {
+    width: 454px;
+    height: 605px;
+    align-self: flex-end;
+}
+
+.third_card_holder {
+    display: flex;
+    width:60%;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.home_fourth_sub_container {
+    background-color: #012B28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+}
+.title_container{
+    width: 1280px;
+    max-width: 1280px;
+    padding-bottom: 20px;
+}
+
+.fourth_container {
+    display: flex;
+    align-self: center;
+    max-width: 1280px;
+    gap: 50px;
+}
+
+.fourth_left_container {
+    width: 40%;
+    border-right: 7px solid #FFBD59;
+    padding-right: 40px;
+}
+
+.learn_btn {
+    color: #FFBD59;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}

@@ -1,0 +1,97 @@
+/* .instructor_card_container{
+    width: 48%;
+    padding: 20px 0;
+}
+
+.instructor_card_container img {
+    width: 100%;
+}
+
+.instructor_name {
+    color: #FFBD59;
+    font-size: 28px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.instructor_pos {
+    color: #FFBD59;
+    font-size: 20px;
+    text-align: center;
+} */
+
+
+/* Main card container */
+.flip_card {
+    background-color: transparent;
+    width: 500px;
+    height: 700px;
+    perspective: 1000px; /* Perspective gives the 3D effect */
+}
+
+.flip_card_inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s; /* Smooth transition */
+    transform-style: preserve-3d; /* Ensure 3D transform */
+}
+
+/* Flip the card when hovered */
+.flip_card:hover .flip_card_inner {
+    transform: rotateY(180deg);
+}
+
+/* Front of the card */
+.flip_card_front, .flip_card_back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hide the back face when front is visible */
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Front of the card content */
+.flip_card_front {
+    background-color: #012B28;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.flip_card_front img {
+    width: 100%;
+    height: auto;
+}
+
+.instructor_name {
+    color: #FFBD59;
+    font-size: 28px;
+    font-weight: 600;
+    margin-top: 1rem;
+}
+
+.instructor_pos {
+    color: #FFBD59;
+    font-size: 20px;
+    margin-top: 0.5rem;
+}
+
+/* Back of the card content */
+.flip_card_back {
+    background-color: #012B28;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    transform: rotateY(180deg); /* Rotate the back to be hidden initially */
+}
+
+.instructor_description {
+    font-size: 18px;
+    line-height: 1.5;
+}

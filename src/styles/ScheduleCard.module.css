@@ -1,0 +1,292 @@
+.title {
+    color: #155B15;
+    font-family: Poppins;
+    font-size: 20px; /* Replace the $text-xl variable */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_container {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.main_container .sub_container {
+    max-width: 1280px;
+}
+
+.main_container .sub_container .image_container {
+    background: #F1F1F1;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.main_container .sub_container .image_container .description_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.main_container .sub_container .image_container .description_container h3 {
+    color: #155B15;
+    font-size: 20px; /* Replace the $text-xl variable */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_container .sub_container .image_container .description_container p {
+    color: #4A4B4A;
+    font-size: 18px; /* Replace the $text-lg variable */
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.36px;
+}
+
+.main_container .sub_container .image_container .description_container .button_container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.main_container .sub_container .image_container .description_container .button_container button {
+    width: 200px;
+    height: 49px;
+    border-radius: 10px;
+    border: 1px solid #248024;
+    background: linear-gradient(0deg, #266526 31.37%, #22D622 100%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50) inset;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px; /* Replace the $text-md variable */
+    font-weight: 600;
+}
+
+.main_container .sub_container .info_container {
+    display: flex;
+    gap: 1rem;
+}
+
+.main_container .sub_container .info_container .info {
+    background: #F1F1F1;
+    flex: 1;
+    padding: 1rem;
+}
+
+.main_container .sub_container .info_container .info h4 {
+    color: #155B15;
+    font-size: 20px; /* Replace the $text-xl variable */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_container .sub_container .info_container .info p {
+    color: #787373;
+    text-indent: 1rem;
+    font-size: 16px; /* Replace the $text-md variable */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.main_container .sub_container .info2 {
+    background: #F1F1F1;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.main_container .sub_container .info2 h4 {
+    color: #155B15;
+    font-size: 20px; /* Replace the $text-xl variable */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_container .sub_container .info2 p {
+    color: #787373;
+    font-size: 16px; /* Replace the $text-md variable */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-indent: 1rem;
+}
+
+.main_container .sub_container .info_schedule {
+    background: #F1F1F1;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+
+.main_container .sub_container .info_schedule h4 {
+    color: #155B15;
+    font-size: 20px; /* Replace the $text-xl variable */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_container .sub_container .info_schedule p {
+    color: #787373;
+    font-size: 16px; /* Replace the $text-md variable */
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-indent: 1rem;
+}
+
+.main_container .sub_container .info_schedule table {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 5px;
+    table-layout: fixed;
+}
+
+.main_container .sub_container .info_schedule th, 
+.main_container .sub_container .info_schedule td {
+    padding: 2rem;
+    width: 25%;
+    text-align: center;
+    color: #155B15;
+    font-size: 20px; /* Replace the $text-xl variable */
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.main_container .sub_container .info_schedule .bg_yellow {
+    background: #FFEAC0;
+}
+
+.main_container .sub_container .info_schedule .bg_white {
+    background: #F8F8F8;
+}
+
+.main_container .sub_container .info_schedule .bg_none {
+    background: none;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1200px) {
+    .main_container {
+        margin-inline: 1rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .main_container .sub_container .image_container img {
+        height: 500px;
+    }
+}
+
+@media (max-width: 768px) {
+    .main_container .sub_container {
+        margin-inline: 1rem;
+    }
+
+    .main_container .sub_container .title {
+        font-size: 2rem;
+    }
+
+    .main_container .sub_container .image_container {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .main_container .sub_container .image_container img {
+        width: 500px;
+        height: auto;
+        align-self: center;
+    }
+
+    .main_container .sub_container .info_schedule table tbody tr td {
+        font-size: 14px; /* Replace the $text-sm variable */
+        padding: 1rem .5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main_container {
+        margin-inline: 0rem;
+    }
+
+    .main_container .sub_container .title {
+        font-size: 1.5rem;
+    }
+
+    .main_container .sub_container .image_container {
+        padding: .5rem;
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .main_container .sub_container .image_container img {
+        width: 350px;
+        height: auto;
+        align-self: center;
+    }
+
+    .main_container .sub_container .description_container h3 {
+        font-size: 1.5rem;
+    }
+
+    .main_container .sub_container .description_container p {
+        font-size: 0.8rem;
+    }
+
+    .main_container .sub_container .info_container {
+        gap: 0.5rem;
+    }
+
+    .main_container .sub_container .info_container .info {
+        padding: 0.5rem;
+    }
+
+    .main_container .sub_container .info_container .info h4 {
+        font-size: 1rem;
+    }
+
+    .main_container .sub_container .info_container .info p {
+        font-size: 0.8rem;
+    }
+
+    .main_container .sub_container .info2 {
+        padding: 0.5rem;
+    }
+
+    .main_container .sub_container .info2 h4 {
+        font-size: 1rem;
+    }
+
+    .main_container .sub_container .info2 p {
+        font-size: 0.8rem;
+    }
+
+    .main_container .sub_container .info_schedule {
+        padding: 0.5rem;
+    }
+
+    .main_container .sub_container .info_schedule h4 {
+        font-size: 1rem;
+    }
+
+    .main_container .sub_container .info_schedule p {
+        font-size: 0.8rem;
+    }
+
+    .main_container .sub_container .info_schedule table tbody tr td {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+}
+
+

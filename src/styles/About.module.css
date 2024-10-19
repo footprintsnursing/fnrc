@@ -1,0 +1,45 @@
+.about_title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #012B28;
+    text-align: center;
+}
+
+.about_info {
+    font-size: 20px;
+    font-weight: 500;
+    color: #787373;
+    text-align: center;
+}
+
+.about_main_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_sub_upper_container {
+    max-width: 1280px;
+    background-color: #fff;
+}
+
+.about_sub_lower_container {
+ background-color: #012B28 ;
+ width: 100%;
+ display: flex;
+ justify-content: center;
+
+}
+.about_sub_lower_bg {
+max-width: 1280px;
+}
+
+.about_card_container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    max-width: 1280px;
+    padding: 20px 0;
+}

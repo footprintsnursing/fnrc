@@ -1,0 +1,24 @@
+.carousel_img {
+    object-fit: cover;
+    height: 800px;
+    object-position: 60% 30%;
+    max-width: 100%;
+}
+
+@media(max-width: 1920px) {
+    .carousel_img {
+        object-fit: cover;
+        height: 600px;
+        /* object-position: 60% 30%; */
+        /* max-width: 100%; */
+    }
+}
+
+@media(max-width: 1440px) {
+    .carousel_img {
+        object-fit: cover;
+        height: 400px;
+        /* object-position: 60% 30%; */
+        /* max-width: 100%; */
+    }
+}

@@ -1,0 +1,48 @@
+
+
+ .sub_title1 {
+    color: #FFBD59;
+    font-size: 28px;
+    font-weight: 500;
+ }
+
+
+
+ .info2 {
+    font-size: 16px;
+ }
+
+ .learn_btn {
+    color: #FFBD59;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.card_img {
+    width: 465px;
+    height: auto;
+    border-radius: 20px;
+}
+
+.card_container > div > ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 16px;
+    list-style: circle;
+    padding-left: 20px;
+    margin-bottom: 20px;
+}
+
+.card_container > div > ul > li {
+    font-weight: 200;
+    margin-bottom: 10px;
+    list-style-position: outside;
+}
+
+
+.card_container {
+    margin: 25px 0;
+    gap: 80px;
+    display: flex;
+}

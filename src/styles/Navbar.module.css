@@ -1,0 +1,110 @@
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    background-color: #012B28;
+    position: relative;
+    top: 0;
+    left: 0;
+    height: auto;
+    z-index: 1000;
+    padding: 17px;
+}
+
+.nav_container {
+    max-width: 1280px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+img {
+    align-self: flex-start;
+}
+
+.nav_menu{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 5%;
+    
+}
+
+.nav_menu > li {
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff !important;
+    cursor: pointer;
+}
+
+/* Hamburger icon */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    position: relative;
+    z-index: 1001; /* Higher z-index than the ul */
+}
+
+.hamburger .line {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* When the menu is open, turn the hamburger into an X */
+.hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(4px, 0);
+    position: relative;
+    top: 8px;
+}
+
+.hamburger.open .line:nth-child(2) {
+    opacity: 0; /* Hide the middle line */
+}
+
+.hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(4px, 0);
+    position: relative;
+    top: -8px;
+}
+
+/* Hide the menu on small screens */
+@media (max-width: 600px) {
+    .nav_container > ul {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 130px;
+        left: 0;
+        background-color: #012b28;
+        width: 100%;
+        padding: 15px;
+        border-radius: 4px;
+        max-height: 0; /* Initially collapsed */
+        overflow: hidden; /* Hide content when collapsed */
+        opacity: 0;
+        transform: translateY(-20px); /* Start with a slight upward slide */
+        transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth toggle */
+    }
+
+    .nav_container > ul > li {
+        padding-bottom: 10px;
+    }
+
+    ul.menuOpen {
+        max-height: 300px; /* Allow content to expand smoothly */
+        opacity: 1; /* Fade in */
+        transform: translateY(0); /* Slide in */
+        flex-direction: column;
+    }
+
+    .hamburger {
+        display: flex; /* Show the hamburger icon */
+    }
+}
