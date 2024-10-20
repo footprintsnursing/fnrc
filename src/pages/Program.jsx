@@ -8,8 +8,8 @@ const sched = [
         image: "/images/NCAS_IGA.jpg",
         description: "Elevate your nursing skills with the Nursing Community Assessment for Nurses (NCAS) – RN Mentorship Program. This program utilizes a comprehensive assessment approach, combining Computer-based Assessment (CBA), Simulation Lab Assessment (SLA), and an Oral Assessment. It evaluates applicants based on the skills and competencies essential for successful nursing practice.",
         title: "NCAS – RN Mentorship Program",
-        tuition: "$918 (tax included) and materials",
-        duration: "22 hours plus 1 hour of final coaching",
+        tuition: "$997 (tax included) and materials",
+        duration: "30 hours",
         deliveryMethod: "In class",
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
@@ -26,8 +26,8 @@ const sched = [
         image: "/images/NCAS_IGA.jpg",
         description: "Elevate your nursing skills with the Nursing Community Assessment for Nurses (NCAS) – RN Mentorship Program. This program utilizes a comprehensive assessment approach, combining Computer-based Assessment (CBA), Simulation Lab Assessment (SLA), and an Oral Assessment. It evaluates applicants based on the skills and competencies essential for successful nursing practice.",
         title: "NCAS – RN Mentorship Program",
-        tuition: "$918 (tax included) and materials",
-        duration: "22 hours plus 1 hour of final coaching",
+        tuition: "$628.95 (tax included) and materials",
+        duration: "30 hours 1 year subscription to our LMS with 2000 Qbanks + Powerpoint",
         deliveryMethod: "In class",
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
@@ -40,12 +40,12 @@ const sched = [
     },
 
     {
-        header: "IGA/SLA (NCAS-RN) Mentorship Crash Course",
+        header: "IGA - SLA/CBA (NCAS-RN) Mentorship Crash Course",
         image: "/images/NCAS_IGA.jpg",
         description: "Elevate your nursing skills with the Nursing Community Assessment for Nurses (NCAS) – RN Mentorship Program. This program utilizes a comprehensive assessment approach, combining Computer-based Assessment (CBA), Simulation Lab Assessment (SLA), and an Oral Assessment. It evaluates applicants based on the skills and competencies essential for successful nursing practice.",
         title: "NCAS – RN Mentorship Program",
-        tuition: "$918 (tax included) and materials",
-        duration: "22 hours plus 1 hour of final coaching",
+        tuition: "$997 (tax included) and materials",
+        duration: "24 hours",
         deliveryMethod: "In class",
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
@@ -61,9 +61,7 @@ const sched = [
 
 const Program = () => {
     return (
-        <div>
-            <h1>PROGRAM</h1>
-
+        <div    >
             <div>
                 {
                     sched.map((item, idx) => (

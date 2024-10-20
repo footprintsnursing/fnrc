@@ -84,7 +84,7 @@ const About = () => {
                 <div className={styles.sub_lower3_bg}>
                     <p className={styles.about_info2}>
                     Join the hundreds of successful IEN&apos;s who&apos;ve trusted 
-                    <b> Footprints Nursing Review Center</b> to guide them to their Canadian nursing career. <b>Your future in healthcare starts here.</b>
+                    <b> Footprints Nursing Review Center</b> to guide them to their Canadian nursing career.
                     </p>
                 </div>
             </div>

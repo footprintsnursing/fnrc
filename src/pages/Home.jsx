@@ -7,15 +7,15 @@ import FeedbackCarousel from "../components/FeedbackCarousel";
 const ncas = {
     picture: "/images/NCAS_IGA.jpg",
     title: "NCAS/IGA - CBA/SLA Mentorship Program",
-    description: "A comprehensive course designed to guide internationally educated nurses (IENs) through the NCAS (Nursing Community Assessment Service) Competency Assessment Program. This program focuses on:",
-    info: ["Test-taking strategies: Learn how to navigate the structure of the exams effectively.", "Content mastery: Review key areas of nursing competencies assessed in the NCAS.", "Clinical simulations: Gain practical, hands-on experience with realistic, case-based scenarios.", "Focused preparation: We ensure you are prepared for the Interview, Simulation Lab Assessment (IGA), and Clinical Judgment components of the CBA (Computer-Based Assessment)."]
+    description: "A comprehensive course designed to guide internationally educated nurses (IENs) through the IGA (Inspired Global Assessment) formerly known as NCAS (Nursing Community Assessment Service) Competency Assessment Program. This program focuses on:",
+    info: ["Test-taking strategies: Learn how to navigate the structure of the exams effectively.", "Content mastery: Review key areas of nursing competencies assessed in the IGA.", "Clinical simulations: Gain practical, hands-on experience with realistic, case-based scenarios.", "Focused preparation: We help ensure you are prepared for the Simulation Lab Assessment (SLA), and components of the Computer-Based Assessment (CBA)."]
 };
 
 const nclex = {
     picture: "/images/NCLEX.jpg",
     title: "NCLEX-RN Mentorship Program",
     description: "Our NCLEX-RN Mentorship Program is designed to provide you with the focused, in-depth preparation you need to pass the NCLEX-RN exam. We place special emphasis on:",
-    info: ["Clinical Judgment and Critical Thinking: Develop the necessary skills to answer NCLEX-style questions with confidence and accuracy.", "Canadian Nursing Context: Understand the standards and expectations of nursing in Canada, with tailored strategies for success in the Canadian healthcare environment.", "Mock Exams & Personalized Feedback: Practice with full-length NCLEX mock exams and receive detailed feedback to improve your performance.", "One-on-One Mentorship: Benefit from personalized mentorship with expert instructors who guide you through each stage of preparation."]
+    info: ["Enjoy a 1-year subscription to our LMS (Learning Management System), providing access to 2,000 Qbanks and Powerpoint for comprehensive exam preparation, along with full-length NCLEX mock exams and personalized feedback to help you improve your performance.","Clinical Judgment and Critical Thinking: Develop the necessary skills to answer NCLEX-style questions with confidence and accuracy.", "Canadian Nursing Context: Understand the standards and expectations of nursing in Canada, with tailored strategies for success in the Canadian healthcare environment.", "One-on-One Mentorship: Benefit from personalized mentorship with expert instructors who guide you through each stage of preparation."]
 };
 
 const card = [
@@ -25,7 +25,7 @@ const card = [
     },
     {
         title: "PROVEN TRACK RECORD",
-        info: "We have a strong success rate in helping students pass their NCAS/IGA and NCLEX-RN exams."
+        info: "With 5 years of expertise, we have consistently achieved a high success rate in guiding IENs to pass their NCAS/IGA and NCLEX-RN exams."
     },
     {
         title: "CONVENIENT LOCATION",
@@ -50,6 +50,7 @@ const Home = () => {
         <div className={styles.home_main_container}>
             <div className={styles.home_first_sub_container}>
                 <h1 className={styles.title2}>Supporting IEN&apos;s Transition into Canadian Nursing </h1>
+                <br></br>
                 <p className={styles.info2}>At Footprints Nursing Review Center, we dedicate ourselves to helping you pursue and achieve a nursing career in Canada.</p>
             </div>
             <div className={styles.home_second_sub_container}>
@@ -86,7 +87,7 @@ const Home = () => {
                 </div>
                 <div className={styles.fourth_container}>
                     <div className={styles.fourth_left_container}>
-                        <p className={styles.info1}>The journey to becoming a licensed nurse in Canada can be challenging, but at Footprints, our students’ success stories prove that it’s possible. Through our comprehensive mentorship programs, we’ve helped hundreds of IENs overcome obstacles and achieve their goals. Discover what our students have to say about their experience with us.</p>
+                        <p className={styles.info1}>The journey to becoming a registered nurse in Canada can be challenging, but at Footprints Nursing Review Center, our students’ success stories prove that it’s possible. Through our comprehensive mentorship programs, we’ve helped hundreds of IENs overcome obstacles and achieve their goals. Discover what our students have to say about their experience with us.</p>
                         <a className={styles.learn_btn} href="/">Learn More</a>
                     </div>
                     <FeedbackCarousel/>

@@ -62,11 +62,17 @@ footer{
     padding: 0 10px;
 }
 
+.contact_container > p {
+    padding-bottom: 10px;
+}
+
 .input_container {
     /* border: 2px solid yellow; */
     display: flex;
     gap: 10px;
 }
+
+
 
 input[type="text"], input[type="email"], input[type="number"]{
     width: 100%;
@@ -95,6 +101,7 @@ input[type="button"] {
     border-radius: 5px;
     border: none;
     align-self: flex-end;
+    color: #fff;
 }
 
 .middle_bg {

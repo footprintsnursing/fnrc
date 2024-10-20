@@ -19,6 +19,7 @@
 
 .info1 {
     font-size: 20px;
+    color: #fff;
  }
 
 .info2 {
@@ -44,7 +45,7 @@ hr{
     /* display: flex;
     justify-content: center; */
     text-align: center;
-    padding: 20px 10px;
+    padding: 50px 10px;
     line-height: 2;
 }
 
@@ -63,6 +64,7 @@ hr{
 .second_container {
     max-width: 1280px;
     text-align: left;
+    padding-top: 50px;
 }
 
 .card_container {
@@ -80,12 +82,18 @@ hr{
 
 .third_container {
     max-width: 1280px;
+    padding: 50px 0;
+}
+
+.third_card_holder > *{
+    margin-bottom: 20px;
 }
 
 
 .third_card_container {
     display: flex;
     gap: 46px;
+    padding-top: 20px;
 }
 
 .third_img {
@@ -111,7 +119,7 @@ hr{
 .title_container{
     width: 1280px;
     max-width: 1280px;
-    padding-bottom: 20px;
+    padding: 50px 0;
 }
 
 .fourth_container {
@@ -119,6 +127,7 @@ hr{
     align-self: center;
     max-width: 1280px;
     gap: 50px;
+    padding-bottom: 50px;
 }
 
 .fourth_left_container {

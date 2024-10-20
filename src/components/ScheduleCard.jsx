@@ -31,10 +31,10 @@ const ScheduleCard = ({sched}) => {
                     <p>{deliveryMethod}</p>
                 </div>
             </div>
-            <div className={styles.info2}>
+            {/* <div className={styles.info2}>
                 <h4>Admission Requirement:</h4>
                 <p>{admissionRequirement}</p>
-            </div>
+            </div> */}
             <div className={styles.info_schedule}>
                 <h4>Intake Schedule:</h4>
                 <p>{intakeDescription}</p>

@@ -24,11 +24,11 @@ const Navbar = () => {
                     <div className={styles.line}></div>
                 </div>
                     <ul className={`${menuOpen ? styles.menuOpen : styles.nav_menu}`}>
-                        <li>HOME</li>
-                        <li>PROGRAMS</li>
-                        <li>ABOUT</li>
-                        <li>CONTACT</li>
-                        <li>MY PORTAL</li>
+                        <li><a href="/">HOME</a></li>
+                        <li><a href="/program">PROGRAMS</a></li>
+                        <li><a href="/about">ABOUT</a></li>
+                        <li><a>CONTACT</a></li>
+                        <li><a href="https://footprintsnursingreviewcenter.talentlms.com/">MY PORTAL</a></li>
                     </ul>
             </div>
         </nav>

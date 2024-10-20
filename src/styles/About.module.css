@@ -36,6 +36,7 @@
 .about_sub_upper_container {
     max-width: 1280px;
     background-color: #fff;
+    padding: 50px 0;
 }
 
 .about_sub_lower_container {
@@ -60,7 +61,7 @@ max-width: 1280px;
 
 .about_sub_lower2_container {
     margin-top: 30px;
-    padding: 50px 0;
+    padding: 80px 0;
 }
 
 .whycard_container {
@@ -71,7 +72,7 @@ max-width: 1280px;
 
 .about_sub_lower3_container {
     width: 100%;
-    background-color: #F5F5F5;
+    background-color: #c7bdbd8a;
     display: flex;
     justify-content: center;
     padding: 50px 0;
@@ -80,4 +81,5 @@ max-width: 1280px;
 .sub_lower3_bg {
     max-width: 1280px;
     text-align: center;
+    padding: 50px 0;
 }

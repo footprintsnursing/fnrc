@@ -8,10 +8,10 @@ const Footer =() => {
             <div className={styles.upper_bg}>
                 <div className={styles.upper_footer}>
                     <div className={styles.info_container}>
-                        <p className={styles.info_title}>Footprints: Empowering Nurses Worldwide</p>
+                        <p className={styles.info_title}>Footprints Nursing Review Center: Supporting IENs Transition Into Canadian Nursing</p>
                         <br></br>
                         <br></br>
-                        <p className={styles.info_description}>For over 5 years, Footprints Nursing Review Center has been supporting internationally educated nurses across the globe, guiding them through their journey to becoming licensed professionals in Canada. Wherever you are, our expertise and mentorship programs are here to help you achieve your nursing dreams and make a lasting impact in the Canadian healthcare system.</p>
+                        <p className={styles.info_description}>For over 5 years, Footprints Nursing Review Center has been supporting internationally educated nurses across the globe, guiding them through their journey to becoming registered nurse in Canada. Wherever you are, our expertise and mentorship programs are here to help you achieve your nursing dreams and make a lasting impact in the Canadian healthcare system.</p>
                     </div>
                     
                     <div className={styles.contact_container}>

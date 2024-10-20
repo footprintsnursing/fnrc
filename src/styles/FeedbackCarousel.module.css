@@ -13,6 +13,7 @@
 
 .feedback_card > p {
     text-align: right;;
+    color: #fff;
 }
 
 .feedback_card > p:nth-child(n+2) {

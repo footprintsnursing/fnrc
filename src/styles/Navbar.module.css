@@ -40,6 +40,11 @@ img {
     cursor: pointer;
 }
 
+.nav_menu > li > a{
+    color: #fff;
+
+}
+
 /* Hamburger icon */
 .hamburger {
     display: none;
