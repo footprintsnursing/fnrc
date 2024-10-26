@@ -77,7 +77,7 @@ const Home = () => {
                                 <WhyCard key={item + idx} cardInfo={item}/>
                             ))}
                         </div>
-                        <img className={styles.third_img} src="/images/fnrc_folder.jpg"/>
+                        <img loading="lazy" className={styles.third_img} src="/images/fnrc_folder.jpg"/>
                     </div>
                 </div>
             </div>

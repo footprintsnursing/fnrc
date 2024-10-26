@@ -9,7 +9,7 @@ const ScheduleCard = ({sched}) => {
         <div className={styles.sub_container}>
             {/* <h1 className={styles.title}>{title}</h1> */}
             <div className={styles.image_container}>
-                <img src={image} width={515} height={317} alt="Eureka Classroom"/>
+                <img loading="lazy" src={image} width={515} height={317} alt="Eureka Classroom"/>
                 <div className={styles.description_container}>
                     <h3>{title}</h3>
                     <br></br>

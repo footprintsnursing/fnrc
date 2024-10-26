@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className={styles.nav_container}>
-               <img src={logo} alt="logo" />
+               <img loading="lazy" src={logo} alt="logo" />
                     {/* Hamburger icon */}
                 <div className={`${styles.hamburger} ${
                         menuOpen ? styles.open : ""

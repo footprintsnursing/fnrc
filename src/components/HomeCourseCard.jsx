@@ -7,7 +7,7 @@ const HomeCourseCard = ({ course }) => {
     return (
         <div className={styles.home_coursecard_container}>
             <div className={styles.card_container}>
-                <img className={styles.card_img} src={picture}/>
+                <img loading="lazy" className={styles.card_img} src={picture}/>
                 <div>
                     <p className={styles.sub_title1}>{title}</p>
                     <br></br>

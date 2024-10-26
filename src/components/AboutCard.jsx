@@ -36,7 +36,7 @@ const AboutCard = ({instructor}) => {
             <div className={styles.flip_card_inner}>
                 {/* Front of the card */}
                 <div className={styles.flip_card_front}>
-                    <img src={picture} alt="instructor" />
+                    <img loading="lazy" src={picture} alt="instructor" />
                     <p className={styles.instructor_name}>{name}</p>
                     <p className={styles.instructor_pos}>{position}</p>
                 </div>
