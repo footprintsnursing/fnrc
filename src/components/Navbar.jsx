@@ -9,7 +9,11 @@ const Navbar = () => {
         setMenuOpen(!menuOpen);
     }
 
-    console.log(menuOpen);
+    const handleContactClick = (event) => {
+        event.preventDefault();
+        document.querySelector("#contact-section").scrollIntoView({ behavior: "smooth" });
+    };
+
     return (
         <nav>
             <div className={styles.nav_container}>
@@ -27,8 +31,8 @@ const Navbar = () => {
                         <li><a href="/">HOME</a></li>
                         <li><a href="/program">PROGRAMS</a></li>
                         <li><a href="/about">ABOUT</a></li>
-                        <li><a>CONTACT</a></li>
-                        <li><a href="https://footprintsnursingreviewcenter.talentlms.com/">MY PORTAL</a></li>
+                        <li><a href="#contact-section">CONTACT</a></li>
+                        <li><a onClick={handleContactClick} href="https://footprintsnursingreviewcenter.talentlms.com/" target="_blank" rel="noopener noreferrer">MY PORTAL</a></li>
                     </ul>
             </div>
         </nav>

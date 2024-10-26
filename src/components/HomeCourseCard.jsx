@@ -18,7 +18,7 @@ const HomeCourseCard = ({ course }) => {
                             <li className={styles.info_list} key={item + index}>{item}</li>
                         ))}
                     </ul>
-                    <a className={styles.learn_btn} href="/">Learn More</a>
+                    <a className={styles.learn_btn} href="/program">Learn More</a>
                 </div>
             </div>
         </div>

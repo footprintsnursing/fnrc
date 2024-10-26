@@ -1,47 +1,61 @@
 <?php
-header("Content-Type: application/json");
-$data = json_decode(file_get_contents("php://input"));
+ini_set('display_errors', 1);
+ini_set('display_startup_errors', 1);
+error_reporting(E_ALL);
 
-// Include PHPMailer and SMTP classes
-use PHPMailer\PHPMailer\PHPMailer;
-use PHPMailer\PHPMailer\Exception;
+header("Content-Type: application/json");
+
 require 'vendor/autoload.php';
 
-// Define sensitive SMTP information
-define("SMTP_SERVER", "smtp-relay.brevo.com");
-define("SMTP_PORT", 587);
-define("SMTP_LOGIN", "7ddac4001@smtp-brevo.com");
-define("SMTP_PASSWORD", "sZ3kHQz2q9p0YGdV");
+use SendinBlue\Client\Configuration;
+use SendinBlue\Client\Api\TransactionalEmailsApi;
+use GuzzleHttp\Client;
 
-// Message limit tracking
-define("COUNTER_FILE", "/config/message_limit.txt");
+// Define message limit file and daily limit
+define("COUNTER_FILE", __DIR__ . "/config/message_limit.txt");
 define("DAILY_LIMIT", 300);
 
-// Initialize the counter file if it doesn't exist
-if (!file_exists(COUNTER_FILE)) {
-    file_put_contents(COUNTER_FILE, "0\n" . date("Y-m-d"));
+// Use file locking for safe read/write operations
+$counterFile = fopen(COUNTER_FILE, "c+");
+if (!$counterFile) {
+    echo json_encode(["success" => false, "message" => "Error accessing message limit file."]);
+    exit;
 }
 
-// Read current count and last reset date
-list($count, $lastResetDate) = explode("\n", file_get_contents(COUNTER_FILE));
+flock($counterFile, LOCK_EX);
+$contents = stream_get_contents($counterFile);
+list($count, $lastResetDate) = explode("\n", $contents ?: "0\n" . date("Y-m-d"));
 
 // Reset count daily
 if (trim($lastResetDate) !== date("Y-m-d")) {
     $count = 0;
     $lastResetDate = date("Y-m-d");
-    file_put_contents(COUNTER_FILE, "$count\n$lastResetDate");
 }
 
-// Block new messages if daily limit reached
+// Check if daily limit is reached
 if ($count >= DAILY_LIMIT) {
     echo json_encode(["success" => false, "message" => "Daily message limit reached. Please try again tomorrow."]);
     exit;
 }
 
-// Validate Inputs
-$errors = [];
+// Increment count and write back to file
+$count++;
+ftruncate($counterFile, 0);
+rewind($counterFile);
+fwrite($counterFile, "$count\n$lastResetDate");
+fflush($counterFile);
+flock($counterFile, LOCK_UN);
+fclose($counterFile);
 
-// Check required fields
+// Process request data
+$data = json_decode(file_get_contents("php://input"));
+if (!$data) {
+    echo json_encode(["success" => false, "message" => "Invalid request data."]);
+    exit;
+}
+
+// Validate inputs
+$errors = [];
 if (empty($data->firstName) || strlen(trim($data->firstName)) < 2) {
     $errors[] = "First name is required and should be at least 2 characters.";
 }
@@ -57,51 +71,34 @@ if (!empty($data->contactNumber) && !preg_match("/^\d{10,15}$/", $data->contactN
 if (empty($data->message) || strlen(trim($data->message)) < 10) {
     $errors[] = "Message is required and should be at least 10 characters.";
 }
+if (empty($data->agreed) || !$data->agreed) { // Check if user agreed to terms
+    $errors[] = "You must agree to the data policy.";
+}
 
-// If validation errors exist, return error messages
 if (!empty($errors)) {
     echo json_encode(["success" => false, "message" => implode(" ", $errors)]);
     exit;
 }
 
-// Sanitize inputs
-$firstName = filter_var($data->firstName, FILTER_SANITIZE_STRING);
-$lastName = filter_var($data->lastName, FILTER_SANITIZE_STRING);
-$contactNumber = filter_var($data->contactNumber, FILTER_SANITIZE_STRING);
-$email = filter_var($data->email, FILTER_SANITIZE_EMAIL);
-$message = filter_var($data->message, FILTER_SANITIZE_STRING);
+// Brevo API setup and email sending
+$config = Configuration::getDefaultConfiguration()->setApiKey('api-key', 'YOUR_BREVO_API_KEY');
+$apiInstance = new TransactionalEmailsApi(new Client(), $config);
 
-// Set up PHPMailer for Brevo SMTP
-$mail = new PHPMailer(true);
+$sendSmtpEmail = new \SendinBlue\Client\Model\SendSmtpEmail([
+    'to' => [['email' => 'footprintsnursing@gmail.com', 'name' => 'Footprints Nursing Review Center']],
+    'sender' => ['email' => 'info@fnrc.ca', 'name' => "FNRC Website"],
+    'subject' => "Message from Website Contact Form",
+    'htmlContent' => "<p>Name: {$data->firstName} {$data->lastName}</p>
+                      <p>Email: {$data->email}</p>
+                      <p>Contact Number: {$data->contactNumber}</p>
+                      <p>Message: {$data->message}</p>"
+]);
 
 try {
-    $mail->isSMTP();
-    $mail->Host = SMTP_SERVER;
-    $mail->SMTPAuth = true;
-    $mail->Username = SMTP_LOGIN;
-    $mail->Password = SMTP_PASSWORD;
-    $mail->SMTPSecure = 'tls';
-    $mail->Port = SMTP_PORT;
-
-    $mail->setFrom($email, "$firstName $lastName");
-    $mail->addAddress('footprintsnursing@gmail.com', 'Footprints Nursing Review Center');
-
-    $mail->isHTML(true);
-    $mail->Subject = "Message from Website";
-    $mail->Body = "<p>Name: {$firstName} {$lastName}</p>
-                   <p>Contact Number: {$contactNumber}</p>
-                   <p>Email: {$email}</p>
-                   <p>Message: {$message}</p>";
-
-    // Send the email
-    $mail->send();
-    
-    // Increment message count and save to file
-    $count++;
-    file_put_contents(COUNTER_FILE, "$count\n$lastResetDate");
-
+    $apiInstance->sendTransacEmail($sendSmtpEmail);
     echo json_encode(["success" => true, "message" => "Email sent successfully."]);
 } catch (Exception $e) {
-    echo json_encode(["success" => false, "message" => "Failed to send email: " . $mail->ErrorInfo]);
+    error_log("Mailer Error: " . $e->getMessage());
+    echo json_encode(["success" => false, "message" => "Failed to send email: " . $e->getMessage()]);
 }
 ?>

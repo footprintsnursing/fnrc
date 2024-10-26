@@ -1,4 +1,6 @@
-
+.program_card_container {
+    padding: 50px 20px;
+}
 .header_container {
     display: flex;
     justify-content: center;
@@ -10,4 +12,22 @@
     font-weight: 700;
     color: #012B28;
     width: 1280px;
+}
+
+@media (max-width: 578px) {
+    .program_card_container {
+        padding: 10px 20px;
+    }
+    .card_header {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 487px) {
+    .program_card_container {
+        padding: 0 20px;
+    }
+    .card_header {
+        font-size: 25px;
+    }
 }
