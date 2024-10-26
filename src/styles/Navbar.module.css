@@ -46,13 +46,13 @@ img {
 
 }
 
-/* Hamburger icon */
+
 .hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
     position: relative;
-    z-index: 1001; /* Higher z-index than the ul */
+    z-index: 1001; 
 }
 
 .hamburger .line {
@@ -60,10 +60,10 @@ img {
     height: 3px;
     background-color: white;
     margin: 4px 0;
-    transition: all 0.3s ease; /* Smooth transition */
+    transition: all 0.3s ease; 
 }
 
-/* When the menu is open, turn the hamburger into an X */
+
 .hamburger.open .line:nth-child(1) {
     transform: rotate(45deg) translate(4px, 0);
     position: relative;
@@ -71,7 +71,7 @@ img {
 }
 
 .hamburger.open .line:nth-child(2) {
-    opacity: 0; /* Hide the middle line */
+    opacity: 0;
 }
 
 .hamburger.open .line:nth-child(3) {
@@ -90,7 +90,7 @@ img {
     background-color: #012B28;
 }
 
-/* Hide the menu on small screens */
+
 @media (max-width: 768px) {
     .nav_container > ul {
         display: flex;
@@ -103,10 +103,10 @@ img {
         width: 100%;
         padding: 15px;
         border-radius: 4px;
-        max-height: 0; /* Initially collapsed */
-        overflow: hidden; /* Hide content when collapsed */
+        max-height: 0;
+        overflow: hidden;
         opacity: 0;
-        transform: translateY(-20px); /* Start with a slight upward slide */
+        transform: translateY(-20px);
         transition: max-height 0.5s ease, opacity 0.5s ease, transform 0.5s ease; /* Transition for smooth toggle */
     }
 
@@ -119,9 +119,9 @@ img {
     }
 
     ul.menuOpen {
-        max-height: 300px; /* Allow content to expand smoothly */
-        opacity: 1; /* Fade in */
-        transform: translateY(0); /* Slide in */
+        max-height: 300px;
+        opacity: 1; 
+        transform: translateY(0);
         flex-direction: column;
         text-decoration: none;
         color: #fff;
@@ -138,6 +138,6 @@ img {
     }
 
     .hamburger {
-        display: flex; /* Show the hamburger icon */
+        display: flex;
     }
 }

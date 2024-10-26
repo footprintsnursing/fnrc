@@ -1,6 +1,6 @@
 import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css'; // Import the carousel CSS
+import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import styles from "../styles/ImageCarousel.module.css";
 const ImageCarousel = () => {
   return (

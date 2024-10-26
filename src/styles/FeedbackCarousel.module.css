@@ -1,15 +1,7 @@
 .feedback_container {
-    /* border: 2px solid red; */
     width: calc(70% - 40px);
 }
 
-.feedback_card{
-    /* border:2px solid blue; */
-    /* height: 1000px; */
-    /* display: flex;
-    flex-direction: column;
-    align-items: flex-end; */
-}
 
 .feedback_card > p {
     text-align: right;;

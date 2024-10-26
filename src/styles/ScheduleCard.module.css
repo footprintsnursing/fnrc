@@ -1,7 +1,7 @@
 .title {
     color: #155B15;
     font-family: Poppins;
-    font-size: 20px; /* Replace the $text-xl variable */
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -35,7 +35,7 @@
 
 .main_container .sub_container .image_container .description_container h3 {
     color: #155B15;
-    font-size: 20px; /* Replace the $text-xl variable */
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -43,7 +43,7 @@
 
 .main_container .sub_container .image_container .description_container p {
     color: #4A4B4A;
-    font-size: 18px; /* Replace the $text-lg variable */
+    font-size: 18px; 
     font-style: normal;
     font-weight: 300;
     line-height: normal;
@@ -65,7 +65,7 @@
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.50) inset;
     color: #FFF;
     text-align: center;
-    font-size: 16px; /* Replace the $text-md variable */
+    font-size: 16px; 
     font-weight: 600;
 }
 
@@ -82,7 +82,7 @@
 
 .main_container .sub_container .info_container .info h4 {
     color: #155B15;
-    font-size: 20px; /* Replace the $text-xl variable */
+    font-size: 20px; 
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -91,7 +91,7 @@
 .main_container .sub_container .info_container .info p {
     color: #787373;
     text-indent: 1rem;
-    font-size: 16px; /* Replace the $text-md variable */
+    font-size: 16px; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -105,7 +105,7 @@
 
 .main_container .sub_container .info2 h4 {
     color: #155B15;
-    font-size: 20px; /* Replace the $text-xl variable */
+    font-size: 20px; 
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -113,7 +113,7 @@
 
 .main_container .sub_container .info2 p {
     color: #787373;
-    font-size: 16px; /* Replace the $text-md variable */
+    font-size: 16px; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -128,7 +128,7 @@
 
 .main_container .sub_container .info_schedule h4 {
     color: #155B15;
-    font-size: 20px; /* Replace the $text-xl variable */
+    font-size: 20px; 
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -136,7 +136,7 @@
 
 .main_container .sub_container .info_schedule p {
     color: #787373;
-    font-size: 16px; /* Replace the $text-md variable */
+    font-size: 16px; 
     font-style: normal;
     font-weight: 400;
     line-height: normal;
@@ -157,7 +157,7 @@
     width: 25%;
     text-align: center;
     color: #155B15;
-    font-size: 20px; /* Replace the $text-xl variable */
+    font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
@@ -175,7 +175,7 @@
     background: none;
 }
 
-/* Media Queries for Responsiveness */
+
 @media (max-width: 1200px) {
     .main_container {
         margin-inline: 1rem;
@@ -209,7 +209,7 @@
     }
 
     .main_container .sub_container .info_schedule table tbody tr td {
-        font-size: 14px; /* Replace the $text-sm variable */
+        font-size: 14px; 
         padding: 1rem .5rem;
     }
 }

@@ -3,7 +3,6 @@ footer{
     flex-direction: column;
     align-items: center;;
     width: 100%;
-    /* padding: 15px; */
 }
 
 .upper_bg {
@@ -16,8 +15,6 @@ footer{
 .upper_footer {
     display: flex;
     max-width: 1280px;
-    /* border: 2px solid red; */
-    /* padding: 15px; */
     color:#012B28;
     padding: 30px 0;
     gap: 50px;
@@ -25,9 +22,7 @@ footer{
 
 .info_container {
     width: 50%;
-    /* border: 2px solid blue; */
     font-size: 16px;
-    /* background-image: url("/images/bg1.png"); */
     z-index: 1;
     position: relative;
 }
@@ -39,11 +34,11 @@ footer{
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('/images/bg1.png'); /* Path to your background image */
-    background-size: cover; /* Ensure the image covers the container */
-    background-position: center; /* Center the image */
-    opacity: .1; /* Adjust the opacity of the background image */
-    z-index: -1; /* Place the background behind the content */
+    background-image: url('/images/bg1.png');
+    background-size: cover; 
+    background-position: center;
+    opacity: .1;
+    z-index: -1;
     border-radius: 10px;
 }
 
@@ -64,7 +59,6 @@ footer{
     display: flex;
     flex-direction: column;
     width: 50%;
-    /* border: 2px solid blue; */
     padding: 0 10px;
     height: auto;
 }
@@ -74,7 +68,6 @@ footer{
 }
 
 .input_container {
-    /* border: 2px solid yellow; */
     display: flex;
     gap: 10px;
 }
@@ -145,61 +138,55 @@ input[type="button"] {
     padding: 15px 20px;
 }
 
-/* Initial icon style */
 .logo_holder img {
     width: 60px;
     height: 40px;
-    /* margin: 0 10px; */
-    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
-    filter: grayscale(100%); /* Grayscale by default */
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
 }
 
-/* Facebook Icon */
+
 .logo_holder img[src*="Facebook"]:hover {
-    transform: scale(1.5); /* Increase size */
-    filter: grayscale(0%) brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(300%) hue-rotate(180deg); /* Facebook blue */
+    transform: scale(1.5);
+    filter: grayscale(0%) brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(300%) hue-rotate(180deg);
 }
 
-/* Instagram Icon */
+
 .logo_holder img[src*="Instagram"]:hover {
-    transform: scale(1.5); /* Increase size */
-    filter: grayscale(0%) brightness(0) saturate(100%) invert(42%) sepia(80%) saturate(3448%) hue-rotate(335deg); /* Instagram colors */
+    transform: scale(1.5); 
+    filter: grayscale(0%) brightness(0) saturate(100%) invert(42%) sepia(80%) saturate(3448%) hue-rotate(335deg);
 }
 
-/* LinkedIn Icon */
 .logo_holder img[src*="LinkedIn"]:hover {
-    transform: scale(1.5); /* Increase size */
-    filter: grayscale(0%) brightness(0) saturate(100%) invert(41%) sepia(15%) saturate(2387%) hue-rotate(185deg); /* LinkedIn blue */
+    transform: scale(1.5); 
+    filter: grayscale(0%) brightness(0) saturate(100%) invert(41%) sepia(15%) saturate(2387%) hue-rotate(185deg);
 }
 
 .successMessage {
-    color: #4CAF50; /* Green color to indicate success */
-    font-size: 18px; /* Default font size */
+    color: #4CAF50;
+    font-size: 18px;
     font-weight: bold;
-    /* margin-top: 15px;
-    padding: 10px; */
-    border: 2px solid #4CAF50; /* Border to make it stand out */
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #4CAF50; 
     border-radius: 5px;
-    background-color: #e8f5e9; /* Light green background for better readability */
+    background-color: #e8f5e9; 
     text-align: center;
-    width: 100%; /* Ensures it spans the full width of the container */
-    max-width: 500px; /* Optional, to avoid being too wide on large screens */
-    margin: 0 auto; /* Center on the page */
+    width: 100%; 
 }
 
-/* Error message style, similar to success message */
+
 .errorMessage {
-    color: #d9534f; /* Red color for error */
+    color: #d9534f;
     font-size: 18px;
     font-weight: bold;
     margin-bottom: 15px;
     padding: 10px;
     border: 2px solid #d9534f;
     border-radius: 5px;
-    background-color: #f8d7da; /* Light red background */
+    background-color: #f8d7da;
     text-align: center;
-    width: 100%; /* Full width within container */
-    /* margin: 0 auto; */
+    width: 100%;
 }
 
 .agreement_container > label {
