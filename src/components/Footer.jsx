@@ -156,7 +156,7 @@ const Footer = () => {
             <div className={styles.middle_bg}>
                 <div className={styles.middle_footer}>
                     <div>
-                        <img loading="lazy" src={logo} alt="Logo"/>
+                    <a href="/"><img loading="lazy" src={logo} alt="logo" /></a>
                     </div>
                     <div className={styles.middle_right_container}>
                         <div className={styles.contact_holder}>

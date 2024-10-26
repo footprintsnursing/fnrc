@@ -7,6 +7,7 @@ import FeedbackCarousel from "../components/FeedbackCarousel";
 const ncas = {
     picture: "/images/NCAS_IGA.jpg",
     title: "NCAS/IGA - CBA/SLA Mentorship Program",
+    iga: true,
     description: "A comprehensive course designed to guide internationally educated nurses (IENs) through the IGA (Inspired Global Assessment) formerly known as NCAS (Nursing Community Assessment Service) Competency Assessment Program. This program focuses on:",
     info: ["Test-taking strategies: Learn how to navigate the structure of the exams effectively.", "Content mastery: Review key areas of nursing competencies assessed in the IGA.", "Clinical simulations: Gain practical, hands-on experience with realistic, case-based scenarios.", "Focused preparation: We help ensure you are prepared for the Simulation Lab Assessment (SLA), and components of the Computer-Based Assessment (CBA)."]
 };
@@ -14,6 +15,7 @@ const ncas = {
 const nclex = {
     picture: "/images/NCLEX.jpg",
     title: "NCLEX-RN Mentorship Program",
+    iga: false,
     description: "Our NCLEX-RN Mentorship Program is designed to provide you with the focused, in-depth preparation you need to pass the NCLEX-RN exam. We place special emphasis on:",
     info: ["Enjoy a 1-year subscription to our LMS (Learning Management System), providing access to 2,000 Qbanks and Powerpoint for comprehensive exam preparation, along with full-length NCLEX mock exams and personalized feedback to help you improve your performance.","Clinical Judgment and Critical Thinking: Develop the necessary skills to answer NCLEX-style questions with confidence and accuracy.", "Canadian Nursing Context: Understand the standards and expectations of nursing in Canada, with tailored strategies for success in the Canadian healthcare environment.", "One-on-One Mentorship: Benefit from personalized mentorship with expert instructors who guide you through each stage of preparation."]
 };

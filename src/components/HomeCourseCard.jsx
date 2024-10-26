@@ -3,7 +3,7 @@ import styles from "../styles/HomeCourseCard.module.css";
 
 const HomeCourseCard = ({ course }) => {
 
-    const { title, description, picture, info } = course;
+    const { title, description, picture, info, iga } = course;
     return (
         <div className={styles.home_coursecard_container}>
             <div className={styles.card_container}>
@@ -18,7 +18,7 @@ const HomeCourseCard = ({ course }) => {
                             <li className={styles.info_list} key={item + index}>{item}</li>
                         ))}
                     </ul>
-                    <a className={styles.learn_btn} href="/program">Learn More</a>
+                    <a className={styles.learn_btn} href={`/program${iga ? `#ncas`: `#nclex`}`}>Learn More</a>
                 </div>
             </div>
         </div>

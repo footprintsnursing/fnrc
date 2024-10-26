@@ -17,7 +17,7 @@ const Navbar = () => {
     return (
         <nav>
             <div className={styles.nav_container}>
-               <img loading="lazy" src={logo} alt="logo" />
+                <a href="/"><img loading="lazy" src={logo} alt="logo" /></a>
                     {/* Hamburger icon */}
                 <div className={`${styles.hamburger} ${
                         menuOpen ? styles.open : ""
@@ -31,8 +31,8 @@ const Navbar = () => {
                         <li><a href="/">HOME</a></li>
                         <li><a href="/program">PROGRAMS</a></li>
                         <li><a href="/about">ABOUT</a></li>
-                        <li><a href="#contact-section">CONTACT</a></li>
-                        <li><a onClick={handleContactClick} href="https://footprintsnursingreviewcenter.talentlms.com/" target="_blank" rel="noopener noreferrer">MY PORTAL</a></li>
+                        <li><a onClick={handleContactClick} href="#contact-section">CONTACT</a></li>
+                        <li><a href="https://footprintsnursingreviewcenter.talentlms.com/" target="_blank" rel="noopener noreferrer">MY PORTAL</a></li>
                     </ul>
             </div>
         </nav>

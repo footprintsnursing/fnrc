@@ -5,7 +5,7 @@ const ScheduleCard = ({sched}) => {
 
     const {id, image, title, description, tuition, duration, deliveryMethod, admissionRequirement, intakeDescription, schedule, isShortCourse} = sched;
     return (
-<section className={styles.main_container}>
+<section id={id} className={styles.main_container}>
         <div className={styles.sub_container}>
             {/* <h1 className={styles.title}>{title}</h1> */}
             <div className={styles.image_container}>
