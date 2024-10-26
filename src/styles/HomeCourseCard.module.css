@@ -9,8 +9,12 @@
 
 
  .info2 {
-    font-size: 16px;
+    font-size: 18px;
     color: #fff;
+ }
+
+ .info_list {
+    font-size: 17px;
  }
 
  .learn_btn {
@@ -51,4 +55,30 @@
     margin: 25px 0;
     gap: 80px;
     display: flex;
+}
+
+@media (max-width: 992px)  {
+    .card_container {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 820px) {
+    .card_img{
+        align-self: center;
+        width: 80%
+    }
+    .card_container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 487px) {
+    .sub_title1 {
+        font-size: 20px;
+    }
+
+    .info2 {
+        font-size: 16px;
+    }
 }

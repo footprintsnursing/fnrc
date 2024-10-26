@@ -11,6 +11,7 @@ footer{
     background: white;
     width:100%;
     justify-content: center;
+    padding: 0 20px;
 }
 .upper_footer {
     display: flex;
@@ -50,8 +51,12 @@ footer{
 }
 
 .info_title {
-    font-size: 36px;
+    font-size: 25px;
     font-weight: 600;
+}
+
+.copyright{
+    text-align: center;
 }
 
 .contact_container {
@@ -109,11 +114,20 @@ input[type="button"] {
     background-color: #012B28;
     display: flex;
     justify-content: center;
+    padding: 0 20px;
 }
 
 .middle_footer {
     max-width: 1280px;
-    width: 100%
+    width: 100%;
+    display: flex;
+    gap: 50px;
+    padding: 30px 0;
+}
+
+.middle_right_container {
+    display: flex;
+    gap: 50px;
 }
 
 .lower_bg {
@@ -123,5 +137,114 @@ input[type="button"] {
     background-color: #FFBD59;
     color: #012B28;
     font-size: 16px;
-    padding: 15px 0;
+    padding: 15px 20px;
+}
+
+/* Initial icon style */
+.logo_holder img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.3s ease, filter 0.3s ease; /* Smooth transition */
+    filter: grayscale(100%); /* Grayscale by default */
+}
+
+/* Facebook Icon */
+.logo_holder img[src*="Facebook"]:hover {
+    transform: scale(1.5); /* Increase size */
+    filter: grayscale(0%) brightness(0) saturate(100%) invert(23%) sepia(100%) saturate(300%) hue-rotate(180deg); /* Facebook blue */
+}
+
+/* Instagram Icon */
+.logo_holder img[src*="Instagram"]:hover {
+    transform: scale(1.5); /* Increase size */
+    filter: grayscale(0%) brightness(0) saturate(100%) invert(42%) sepia(80%) saturate(3448%) hue-rotate(335deg); /* Instagram colors */
+}
+
+/* LinkedIn Icon */
+.logo_holder img[src*="LinkedIn"]:hover {
+    transform: scale(1.5); /* Increase size */
+    filter: grayscale(0%) brightness(0) saturate(100%) invert(41%) sepia(15%) saturate(2387%) hue-rotate(185deg); /* LinkedIn blue */
+}
+
+.successMessage {
+    color: #4CAF50; /* Green color to indicate success */
+    font-size: 18px; /* Default font size */
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #4CAF50; /* Border to make it stand out */
+    border-radius: 5px;
+    background-color: #e8f5e9; /* Light green background for better readability */
+    text-align: center;
+    width: 100%; /* Ensures it spans the full width of the container */
+    max-width: 500px; /* Optional, to avoid being too wide on large screens */
+    margin: 0 auto; /* Center on the page */
+}
+
+/* Error message style, similar to success message */
+.errorMessage {
+    color: #d9534f; /* Red color for error */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    padding: 10px;
+    border: 2px solid #d9534f;
+    border-radius: 5px;
+    background-color: #f8d7da; /* Light red background */
+    text-align: center;
+    width: 100%; /* Full width within container */
+    max-width: 500px;
+    margin: 0 auto; /* Center on the page */
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .middle_footer{
+        justify-content: space-around;
+    }
+    .middle_right_container {
+        flex-direction: column;
+        gap: 50px;
+    }
+}
+
+@media (max-width: 768px) {
+    .upper_footer {
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .info_container {
+        width: 100%;
+    }
+
+    .contact_container {
+        width: 100%;
+    }
+
+    .successMessage, .errorMessage {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+@media (max-width: 580px) {
+    .middle_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle_right_container {
+        align-items: center;
+    }
+
+    .successMessage, .errorMessage {
+        font-size: 14px;
+        padding: 6px;
+    }
 }

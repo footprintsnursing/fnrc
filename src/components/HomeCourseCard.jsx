@@ -15,7 +15,7 @@ const HomeCourseCard = ({ course }) => {
                     <br></br>
                     <ul>
                         {info.map((item, index) => (
-                            <li key={info + index}>{item}</li>
+                            <li className={styles.info_list} key={item + index}>{item}</li>
                         ))}
                     </ul>
                     <a className={styles.learn_btn} href="/">Learn More</a>

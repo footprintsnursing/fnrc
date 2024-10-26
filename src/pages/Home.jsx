@@ -90,6 +90,7 @@ const Home = () => {
                         <p className={styles.info1}>The journey to becoming a registered nurse in Canada can be challenging, but at Footprints Nursing Review Center, our students’ success stories prove that it’s possible. Through our comprehensive mentorship programs, we’ve helped hundreds of IENs overcome obstacles and achieve their goals. Discover what our students have to say about their experience with us.</p>
                         <a className={styles.learn_btn} href="/">Learn More</a>
                     </div>
+                    <hr className={styles.divider}></hr>
                     <FeedbackCarousel/>
                 </div>
             </div>

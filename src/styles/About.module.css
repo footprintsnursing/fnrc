@@ -12,6 +12,13 @@
     text-align: center;
 }
 
+.about_title3 {
+    font-size: 36px;
+    font-weight: 600;
+    color: #FFBD59;
+    text-align: center; 
+}
+
 .about_info {
     font-size: 20px;
     font-weight: 500;
@@ -26,6 +33,14 @@
     text-align: left;
 }
 
+.about_info3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #012B28;
+    text-align: center;
+}
+
+
 .about_main_container {
     display: flex;
     flex-direction: column;
@@ -36,7 +51,20 @@
 .about_sub_upper_container {
     max-width: 1280px;
     background-color: #fff;
-    padding: 50px 0;
+    padding: 50px 20px;
+}
+
+.about_sub_upper2_container {
+    width: 100%;
+    background-color: #FFBD59;
+    padding: 50px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.about_mission_container {
+    max-width: 1280px;
+    color: #012B28;
 }
 
 .about_sub_lower_container {
@@ -44,6 +72,7 @@
  width: 100%;
  display: flex;
  justify-content: center;
+ padding: 40px 20px;
 
 }
 .about_sub_lower_bg {
@@ -61,7 +90,7 @@ max-width: 1280px;
 
 .about_sub_lower2_container {
     margin-top: 30px;
-    padding: 80px 0;
+    padding: 80px 20px;
 }
 
 .whycard_container {
@@ -75,11 +104,34 @@ max-width: 1280px;
     background-color: #c7bdbd8a;
     display: flex;
     justify-content: center;
-    padding: 50px 0;
+    padding: 50px 20px;
 }
 
 .sub_lower3_bg {
     max-width: 1280px;
     text-align: center;
     padding: 50px 0;
+}
+
+@media (max-width: 576px) {
+    .about_title, .about_title2, .about_title3 {
+        font-size: 25px;
+    }
+
+    .about_info, .about_info3 {
+        font-size: 16px;
+    }
+
+    .about_info2 {
+        font-size: 25px;
+    }
+
+    .whycard_container {
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .about_sub_lower2_container {
+        padding: 20px 20px;
+    }
 }

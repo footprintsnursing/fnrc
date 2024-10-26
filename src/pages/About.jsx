@@ -58,8 +58,21 @@ const About = () => {
                 <br></br>
                 <p className={styles.about_info}>With over 5 years of excellence, our review programs are designed to simplify the complex journey of nursing certification and licensure in Canada. Our tailored courses, combined with real-life insights and industry expertise, give you the confidence and skills you need to succeed.</p>
             </div>
+            <div className={styles.about_sub_upper2_container}>
+                <div className={styles.about_mission_container}>
+                    <p className={styles.about_title}>Mission</p>
+                    <br></br>
+                    <p className={styles.about_info3}>Our mission is to support Internationally Educated Nurses (IENs) in their smooth and effective transition into Canadian nursing. We are dedicated to providing the knowledge, skills, and resources necessary to help IENs navigate the licensing process and succeed in their nursing careers in Canada.</p>
+                </div>
+            </div>
+                <div className={styles.about_sub_upper_container}>
+                    <p className={styles.about_title}>Vision</p>
+                    <br></br>
+                    <p className={styles.about_info3}>Our vision is to be the leading nursing review center, recognized for empowering Internationally Educated Nurses (IENs) in successfully integrating into the Canadian healthcare system. Building on our 5 years of experience, we aim to expand our reach, continuously enhance our programs, and provide top-tier support to ensure every IEN achieves their full potential in their nursing careers in Canada.</p>
+                </div>
             <div className={styles.about_sub_lower_container}>
                 <div className={styles.about_sub_lower_bg}>
+                    <p className={styles.about_title3}>Meet Our Instructors</p>
                     <div className={styles.about_card_container}>
                         {
                             instructors.map((instructor, idx) => (

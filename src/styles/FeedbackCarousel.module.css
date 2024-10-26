@@ -14,9 +14,28 @@
 .feedback_card > p {
     text-align: right;;
     color: #fff;
+    font-weight: 200;
 }
 
 .feedback_card > p:nth-child(n+2) {
     font-weight: bold;
 }
 
+
+
+@media (max-width: 1024px) {
+    .feedback_container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 576px) {
+    .feedback_container {
+        width: 100%;
+
+    }
+
+    .feedback_card {
+        width: 100%;
+    }
+}
