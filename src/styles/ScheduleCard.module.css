@@ -7,6 +7,16 @@
     line-height: normal;
 }
 
+.tuition {
+    text-align: right;
+    color: #155B15 !important;
+}
+
+.price{
+    font-size: 24px !important;
+    font-weight: 600 !important;
+}
+
 .main_container {
     margin-top: 2rem;
     display: flex;
@@ -78,6 +88,7 @@
     background: #F1F1F1;
     flex: 1;
     padding: 1rem;
+
 }
 
 .main_container .sub_container .info_container .info h4 {
@@ -86,11 +97,12 @@
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+    
 }
 
 .main_container .sub_container .info_container .info p {
     color: #787373;
-    text-indent: 1rem;
+    /* text-indent: 1rem; */
     font-size: 16px; 
     font-style: normal;
     font-weight: 400;
@@ -140,7 +152,7 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
-    text-indent: 1rem;
+    /* text-indent: 1rem; */
 }
 
 .main_container .sub_container .info_schedule table {
@@ -240,7 +252,7 @@
     }
 
     .main_container .sub_container .description_container p {
-        font-size: 0.8rem;
+        font-size: 0.8rem !important;
     }
 
     .main_container .sub_container .info_container {
@@ -290,3 +302,8 @@
 }
 
 
+@media (max-width: 470px) {
+    .info_container {
+        flex-direction: column;
+    }
+} 

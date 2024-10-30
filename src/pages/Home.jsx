@@ -6,7 +6,7 @@ import FeedbackCarousel from "../components/FeedbackCarousel";
 
 const ncas = {
     picture: "/images/NCAS_IGA.jpg",
-    title: "NCAS/IGA - CBA/SLA Mentorship Program",
+    title: "IGA- CBA and SLA (formerly known as NCAS)",
     iga: true,
     description: "A comprehensive course designed to guide internationally educated nurses (IENs) through the IGA (Inspired Global Assessment) formerly known as NCAS (Nursing Community Assessment Service) Competency Assessment Program. This program focuses on:",
     info: ["Test-taking strategies: Learn how to navigate the structure of the exams effectively.", "Content mastery: Review key areas of nursing competencies assessed in the IGA.", "Clinical simulations: Gain practical, hands-on experience with realistic, case-based scenarios.", "Focused preparation: We help ensure you are prepared for the Simulation Lab Assessment (SLA), and components of the Computer-Based Assessment (CBA)."]

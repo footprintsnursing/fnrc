@@ -14,7 +14,12 @@
 
 @media(max-width: 1440px) {
     .carousel_img {
-        object-fit: cover;
         height: 400px;
+    }
+}
+
+@media(max-width: 450px) {
+    .carousel_img {
+        height: 250px;
     }
 }

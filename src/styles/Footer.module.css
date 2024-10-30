@@ -53,6 +53,7 @@ footer{
 
 .copyright{
     text-align: center;
+    color: #012B28;
 }
 
 .contact_container {
@@ -65,6 +66,10 @@ footer{
 
 .contact_container > p {
     padding-bottom: 10px;
+}
+
+.contact_holder{
+    color: #fff;
 }
 
 .input_container {
@@ -228,7 +233,7 @@ input[type="button"] {
 @media (max-width: 580px) {
     .middle_footer{
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
     }
 
     .middle_right_container {
@@ -238,5 +243,15 @@ input[type="button"] {
     .successMessage, .errorMessage {
         font-size: 14px;
         padding: 6px;
+    }
+
+    .contact_holder {
+        padding-left: 40px;
+    }
+
+    .logo_holder {
+        /* border: 2px solid red; */
+        align-self: flex-start;
+        padding-left: 25px;
     }
 }

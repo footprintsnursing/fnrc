@@ -11,24 +11,49 @@ const ScheduleCard = ({sched}) => {
             <div className={styles.image_container}>
                 <img loading="lazy" src={image} width={515} height={317} alt="Eureka Classroom"/>
                 <div className={styles.description_container}>
-                    <h3>{title}</h3>
-                    <br></br>
+                    {/* <h3>{title}</h3>
+                    <br></br> */}
                     <p>{description}</p>
+                    <br></br>
+                    {
+                        tuition.map((t,idx) => (
+                            <div className={styles.tuition} key={t + idx}>
+                                {idx === 0 ? <p className={styles.price}>{t}</p> : <p>{t}</p>}
+                            </div>
+                        ))
+                    }
+                    {/* <p className={styles.tuition} dangerouslySetInnerHTML={{ __html: tuition }} ></p> */}
                     {/* { isShortCourse ? (<div className={styles.button_container}><button onClick={handleRedirect}>View Program Outline</button></div>) : null} */}
                 </div>
             </div>
             <div className={styles.info_container}>
-                <div className={styles.info}>
+                {/* <div className={styles.info}>
                     <h4>Tuition Fee:</h4>
                     <p>{tuition}</p>
-                </div>
+                </div> */}
                 <div className={styles.info}>
                     <h4>Duration:</h4>
-                    <p>{duration}</p>
+                    {/* <p>{duration}</p> */}
+                    {
+                        duration.map((dur, idx) => (
+                            <>
+                                <p dangerouslySetInnerHTML={{ __html: dur }}></p>
+                                <br></br>
+                            </>
+                        ))
+                    }
                 </div>
                 <div className={styles.info}>
                     <h4>Delivery Method:</h4>
-                    <p>{deliveryMethod}</p>
+                    {
+                        deliveryMethod.map((delivery, idx) => (
+                            <>
+                                <p key={delivery + idx} dangerouslySetInnerHTML={{ __html: delivery }} ></p>
+                                <br></br> 
+                            </>
+                        ))
+                    }
+                    {/* <p>{deliveryMethod}</p> */}
                 </div>
             </div>
             {/* <div className={styles.info2}>
