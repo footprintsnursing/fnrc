@@ -5,7 +5,7 @@ import ReactCardFlip from "react-card-flip";
 
 
 const AboutCard = ({instructor}) => {
-    const { name, position, description, picture} = instructor;
+    const { name, owner, position, description, picture} = instructor;
 
     return (
         <div className={styles.flip_card}>
@@ -14,6 +14,7 @@ const AboutCard = ({instructor}) => {
                 <div className={styles.flip_card_front}>
                     <img loading="lazy" src={picture} alt="instructor" />
                     <p className={styles.instructor_name}>{name}</p>
+                    <p className={styles.instructor_pos}>{owner}</p>
                     <p className={styles.instructor_pos}>{position}</p>
                 </div>
 

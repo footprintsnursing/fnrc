@@ -7,7 +7,8 @@ const instructors = [
     {
         name: "Marilee D. Sinlao",
         picture: "/images/Marilee.png",
-        position: "NCLEX-RN / IGA (NCAS-RN) Instructor",
+        owner: "",
+        position: "Founder / Instructor",
         description: "Marilee is a registered nurse with extensive years of nursing experience working in various hospitals in the lower mainland. She has more than a decade of teaching experience and has taught HCA and LPN students in various colleges in British Columbia. Marilee has been a Senior Educational Instructor and strongly advocates for internationally educated nurses (IENs) in supporting them to transition efficiently into Canadian Registered Nurses. She also completed her Instructor Development Program at the National Association of Career Colleges (NACC). She believes in empowering their students to become lifelong learners. Together with her husband, they aim to provide a nurturing and inclusive environment that fosters academic excellence."
     },
     {
@@ -20,7 +21,7 @@ const instructors = [
         name: "Jocelyn Baluyot",
         picture: "/images/Jocelyn.png",
         position: "IGA (NCAS-RN) Instructor",
-        description: "Jocelyn Baluyot, a distinguished member of our team at Eureka College of Canada. As a seasoned nurse with a robust international background, including experiences in the Philippines, the UK, and Canada, Jocelyn epitomizes excellence in nursing. Currently serving as our NCAS-RN instructor, she brings a wealth of knowledge and a nuanced understanding of the Canadian nursing landscape. Jocelyn's commitment to nursing education is unparalleled. She guides aspiring nurses through the intricacies of the Canadian nursing system."
+        description: "Jocelyn Baluyot, a distinguished member of our team at Footprints Nursing Review Center. As a seasoned nurse with a robust international background, including experiences in the Philippines, the UK, and Canada, Jocelyn epitomizes excellence in nursing. Currently serving as our NCAS-RN instructor, she brings a wealth of knowledge and a nuanced understanding of the Canadian nursing landscape. Jocelyn's commitment to nursing education is unparalleled. She guides aspiring nurses through the intricacies of the Canadian nursing system."
     },
     {
         name: "Ederlyn Lumabi",
