@@ -161,8 +161,8 @@ const Footer = () => {
                     <div className={styles.middle_right_container}>
                         <div className={styles.contact_holder}>
                             <p>Footprints Nursing Review Center</p>
-                            <p>889 Carnarvon St.</p>
-                            <p>New Westminster, BC V3M 1G2</p>
+                            <p>379 Columbia Street </p>
+                            <p>New Westminster BC, V3L 5T6</p>
                             <p>778-882-9159</p>
                             <p>footprintsnursing@gmail.com</p>
                         </div>
