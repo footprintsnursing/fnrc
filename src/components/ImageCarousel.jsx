@@ -11,7 +11,7 @@ const ImageCarousel = () => {
         infiniteLoop 
         showStatus={false} 
         showThumbs={false}
-        transitionTime={1000} >
+        transitionTime={2000} >
         <div>
           <img className={styles.carousel_img} src="/images/home_pic1.JPG" alt="Image 1" />
         </div>
@@ -20,10 +20,10 @@ const ImageCarousel = () => {
         </div>
         <div>
           <img className={styles.carousel_img} src="/images/home_pic7.jpg" alt="Image 3" />
-        </div>
+        </div> */}
         <div>
           <img className={styles.carousel_img} src="/images/home_pic3.JPG" alt="Image 4" />
-        </div> */}
+        </div>
       </Carousel>
     </div>
   );
