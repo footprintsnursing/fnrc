@@ -57,8 +57,8 @@ const Home = () => {
             </div>
             <div className={styles.home_second_sub_container}>
                 <div className={styles.second_container}>
-                    <h2 className={styles.title1}>Your Pathway to Canadian Nursing</h2>
-                    <br></br>
+                    {/* <h2 className={styles.title1}>Your Pathway to Canadian Nursing</h2> */}
+                    {/* <br></br> */}
                     <p className={styles.info1}>Navigating the road to becoming a registered nurse in Canada can be challenging, but at Footprints Nursing Review Center, we’re here to make that journey easier. Our specialized programs, including NCAS/IGA - CBA/SLA Review and NCLEX-RN Mentorship, equip internationally educated nurses with the skills, knowledge, and confidence needed to meet Canadian licensure requirements and thrive in the healthcare sector.</p>
                 </div>
                 <div className={styles.card_container}>

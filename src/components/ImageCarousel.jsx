@@ -13,7 +13,7 @@ const ImageCarousel = () => {
         showThumbs={false}
         transitionTime={2000} >
         <div>
-          <img className={styles.carousel_img} src="/images/home_pic1.JPG" alt="Image 1" />
+          <img className={styles.carousel_img} src="/images/home_pic1.png" alt="Image 1" />
         </div>
         {/* <div>
           <img className={styles.carousel_img} src="/images/home_pic2.JPG" alt="Image 2" />
