@@ -17,8 +17,6 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD", "4TH"],
-        ["OCT. GROUP (SAT)", "Oct. 19", "Oct. 26", "Nov. 2", "Nov. 9"],
-        ["OCT GROUP (SUN)", "Oct. 27", "Nov. 3", "Nov. 10", "Nov. 17"],
         ["NOV. GROUP (SAT)", "Nov. 23", "Nov. 30", "Dec. 7", "Dec. 14"],
         ["JAN. GROUP (SAT)", "Jan. 18", "Jan. 25", "Feb. 1", "Feb. 8"],
         ["JAN GROUP (SUN)", "Jan. 19", "Jan. 26", "Feb. 2", "Feb. 9"]
@@ -54,9 +52,8 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD",],
-        ["OCT. GROUP", "Oct. 28", "Oct. 29", "Oct. 30"],
         ["NOV. GROUP", "Nov. 19", "Nov. 20", "Nov. 21"],
-        ["DEC. GROUP", "Dec. 17", "Dec. 18", "Dec. 19"],
+        ["DEC. GROUP", "Dec. 4", "Dec. 5", "Dec. 6"],
         ]
     },
 
