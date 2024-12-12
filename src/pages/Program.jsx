@@ -54,6 +54,8 @@ const sched = [
         ["", "1ST", "2ND", "3RD",],
         ["NOV. GROUP", "Nov. 19", "Nov. 20", "Nov. 21"],
         ["DEC. GROUP", "Dec. 4", "Dec. 5", "Dec. 6"],
+        ["DEC. GROUP", "Dec. 19", "Dec. 20", "Dec. 21"],
+        ["JAN. GROUP", "Jan. 7", "Jan. 8", "Jan. 9"]
         ]
     },
 
