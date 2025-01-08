@@ -15,7 +15,7 @@ const Footer = () => {
     const [successMessage, setSuccessMessage] = useState("");
     const [agreed, setAgreed] = useState(false);
 
-    const handleChange = (e) => {
+    const handleChange = (e) => {''
         const { name, value } = e.target;
         setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
@@ -75,7 +75,7 @@ const Footer = () => {
             const response = await fetch("/contact.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({formData, agreed})
             });
             const result = await response.json();
 
