@@ -17,11 +17,11 @@ const Footer = () => {
 
     const handleChange = (e) => {''
         const { name, value } = e.target;
-        setFormData((prevData) => ({ ...prevData, [name]: value.trim() }));
+        setFormData((prevData) => ({ ...prevData, [name]: value }));
     };
 
-    const handleAgreementChange = () => {
-        setAgreed(!agreed);
+    const handleAgreementChange = (e) => {
+        setAgreed(e.target.checked);
     };
 
     const validateForm = () => {
