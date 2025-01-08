@@ -72,10 +72,11 @@ const Footer = () => {
         setIsSubmitting(true);
 
         try {
+            const payload = { ...formData, agreed};
             const response = await fetch("/contact.php", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({formData, agreed})
+                body: JSON.stringify(payload)
             });
             const result = await response.json();
 
