@@ -182,7 +182,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.lower_bg}>
-                <p className={styles.copyright}>Copyright © 2019 - 2024 Footprints Nursing Review Center, New Westminster, B.C., Canada</p>
+                <p className={styles.copyright}>Copyright © 2019 - 2025 Footprints Nursing Review Center, New Westminster, B.C., Canada</p>
             </div>
         </footer>
     );

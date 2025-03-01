@@ -17,9 +17,9 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD", "4TH"],
-        ["JAN. GROUP (SAT)", "Jan. 18", "Jan. 25", "Feb. 1", "Feb. 8"],
         ["JAN. GROUP (SUN)", "Jan. 19", "Jan. 26", "Feb. 2", "Feb. 9"],
-        ["FEB. GROUP (SUN)", "Feb. 9", "Feb. 16", "Feb. 23", "Mar. 2"]
+        ["FEB. GROUP (SUN)", "Feb. 9", "Feb. 16", "Feb. 23", "Mar. 2"],
+        ["MAR. GROUP (SAT)", "Mar. 8", "Mar. 15", "Mar. 22", "Mar. 29"]
         ]
     },
 
@@ -37,7 +37,8 @@ const sched = [
         schedule: [
         ["", "1ST", "2ND", "3RD", "4TH", "5TH"],
         ["NOV. GROUP (SAT)", "Nov. 23", "Nov. 30", "Dec. 7", "Dec. 14", "Dec. 21"],
-        ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"]
+        ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
+        ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"]
         ]
     },
 
@@ -53,9 +54,9 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD",],
-        ["DEC. GROUP", "Dec. 4", "Dec. 5", "Dec. 6"],
         ["DEC. GROUP", "Dec. 19", "Dec. 20", "Dec. 21"],
-        ["JAN. GROUP", "Jan. 7", "Jan. 8", "Jan. 9"]
+        ["JAN. GROUP", "Jan. 7", "Jan. 8", "Jan. 9"],
+        ["MAR. GROUP" , "Mar. 19,", "Mar. 20", "Mar. 21"]
         ]
     },
 
