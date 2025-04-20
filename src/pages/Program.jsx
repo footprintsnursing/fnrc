@@ -39,7 +39,7 @@ const sched = [
         ["", "1ST", "2ND", "3RD", "4TH", "5TH"],
         ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
         ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"],
-        ["JUN. GROUP (SUN)", "Jun. 8", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6"]
+        ["JUN. GROUP (SUN)", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6","Jul. 13"]
         ]
     },
 
