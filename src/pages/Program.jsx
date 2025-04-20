@@ -16,10 +16,11 @@ const sched = [
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
-        ["", "1ST", "2ND", "3RD", "4TH"],
-        ["JAN. GROUP (SUN)", "Jan. 19", "Jan. 26", "Feb. 2", "Feb. 9"],
-        ["FEB. GROUP (SUN)", "Feb. 9", "Feb. 16", "Feb. 23", "Mar. 2"],
-        ["MAR. GROUP (SAT)", "Mar. 8", "Mar. 15", "Mar. 22", "Mar. 29"]
+        ["", "1ST", "2ND", "3RD", "4TH"],,
+        ["MAR. GROUP (SAT)", "Mar. 8", "Mar. 15", "Mar. 22", "Mar. 29"],
+        ["APR. GROUP (SAT)", "Apr. 5", "Apr. 12", "Apr. 19", "Apr. 26"],
+        ["MAY GROUP (SAT)", "May 3", "May 10", "May 17", "May 24"],
+        ["JUN. GROUP (SAT)","Jun. 14", "Jun. 21", "Jun. 28", "Jul. 5 "]
         ]
     },
 
@@ -36,9 +37,9 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD", "4TH", "5TH"],
-        ["NOV. GROUP (SAT)", "Nov. 23", "Nov. 30", "Dec. 7", "Dec. 14", "Dec. 21"],
         ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
-        ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"]
+        ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"],
+        ["JUN. GROUP (SUN)", "Jun. 8", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6"]
         ]
     },
 
@@ -54,9 +55,10 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD",],
-        ["DEC. GROUP", "Dec. 19", "Dec. 20", "Dec. 21"],
-        ["JAN. GROUP", "Jan. 7", "Jan. 8", "Jan. 9"],
-        ["MAR. GROUP" , "Mar. 19,", "Mar. 20", "Mar. 21"]
+        ["MAR. GROUP" , "Mar. 19,", "Mar. 20", "Mar. 21"],
+        ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"],
+        ["MAY. GROUP", "May. 6", "May. 7", "May. 8"],
+        ["JUN GROUP", "Jun. 24", "Jun. 25", "Jun. 26"]
         ]
     },
 
