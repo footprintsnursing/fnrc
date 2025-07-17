@@ -38,9 +38,10 @@ const sched = [
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
         ["", "1ST", "2ND", "3RD", "4TH", "5TH"],
-        ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
+        // ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
         ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"],
-        ["JUN. GROUP (SUN)", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6","Jul. 13"]
+        ["JUN. GROUP (SUN)", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6","Jul. 13"],
+        ["AUG. GROUP (SUN)", "Aug. 31", " Sept. 7", "Sept. 14", "Sept. 21", "Sept. 28"]
         ]
     },
 
