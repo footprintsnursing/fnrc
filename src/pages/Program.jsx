@@ -18,10 +18,11 @@ const sched = [
         schedule: [
         ["", "1ST", "2ND", "3RD", "4TH"],,
         // ["MAR. GROUP (SAT)", "Mar. 8", "Mar. 15", "Mar. 22", "Mar. 29"],
-        ["APR. GROUP (SAT)", "Apr. 5", "Apr. 12", "Apr. 19", "Apr. 26"],
+        // ["APR. GROUP (SAT)", "Apr. 5", "Apr. 12", "Apr. 19", "Apr. 26"],
         ["MAY GROUP (SAT)", "May 3", "May 10", "May 17", "May 24"],
         ["JUN. GROUP (SAT)","Jun. 14", "Jun. 21", "Jun. 28", "Jul. 5 "],
-        ["JUL. GROUP (SAT)", "Jul. 12", "Jul. 19", "Jul. 26", "Aug. 2"]
+        ["JUL. GROUP (SAT)", "Jul. 12", "Jul. 19", "Jul. 26", "Aug. 2"],
+        ["AUG. GROUP (SAT)", "Aug. 16", "Aug. 23", "Aug. 30", "Sept. 6"]
         ]
     },
 
@@ -41,7 +42,7 @@ const sched = [
         // ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
         ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"],
         ["JUN. GROUP (SUN)", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6","Jul. 13"],
-        ["AUG. GROUP (SUN)", "Aug. 31", " Sept. 7", "Sept. 14", "Sept. 21", "Sept. 28"]
+        ["SEPT. GROUP (SUN)", "Aug. 31", " Sept. 7", "Sept. 14", "Sept. 21", "Sept. 28"]
         ]
     },
 
@@ -58,10 +59,11 @@ const sched = [
         schedule: [
         ["", "1ST", "2ND", "3RD",],
         // ["MAR. GROUP" , "Mar. 19,", "Mar. 20", "Mar. 21"],
-        ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"],
-        ["MAY. GROUP", "May. 6", "May. 7", "May. 8"],
-        ["JUN GROUP", "Jun. 24", "Jun. 25", "Jun. 26"],
-        ["JUL GROUP", "Jul. 15", "Jul. 16", "Jul. 17"]
+        // ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"],
+        ["MAY GROUP", "May. 6", "May. 7", "May. 8"],
+        ["JUN. GROUP", "Jun. 24", "Jun. 25", "Jun. 26"],
+        ["JUL. GROUP", "Jul. 15", "Jul. 16", "Jul. 17"],
+        ["AUG. GROUP", "Aug. 11", "Aug. 12", "Aug. 13"]
         ]
     },
 
