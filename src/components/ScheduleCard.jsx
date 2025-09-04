@@ -15,13 +15,13 @@ const ScheduleCard = ({sched}) => {
                     <br></br> */}
                     <p>{description}</p>
                     <br></br>
-                    {
+                    {/* {
                         tuition.map((t,idx) => (
                             <div className={styles.tuition} key={t + idx}>
                                 {idx === 0 ? <p className={styles.price}>{t}</p> : <p>{t}</p>}
                             </div>
                         ))
-                    }
+                    } */}
                     {/* <p className={styles.tuition} dangerouslySetInnerHTML={{ __html: tuition }} ></p> */}
                     {/* { isShortCourse ? (<div className={styles.button_container}><button onClick={handleRedirect}>View Program Outline</button></div>) : null} */}
                 </div>
