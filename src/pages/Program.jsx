@@ -16,18 +16,19 @@ const sched = [
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
-        ["", "1ST", "2ND", "3RD", "4TH"],
-        // ["MAR. GROUP (SAT)", "Mar. 8", "Mar. 15", "Mar. 22", "Mar. 29"],
-        // ["APR. GROUP (SAT)", "Apr. 5", "Apr. 12", "Apr. 19", "Apr. 26"],
-        // ["MAY GROUP (SAT)", "May 3", "May 10", "May 17", "May 24"],
-        // ["JUN. GROUP (SAT)","Jun. 14", "Jun. 21", "Jun. 28", "Jul. 5 "],
-        // ["JUL. GROUP (SAT)", "Jul. 12", "Jul. 19", "Jul. 26", "Aug. 2"],
-        // ["AUG. GROUP (SAT)", "Aug. 16", "Aug. 23", "Aug. 30", "Sept. 6"],
-        // ["SEPT. GROUP (SAT)", "Sept. 20", "Sept. 27", "Oct. 4", "Oct. 11"],
-        ["OCT. GROUP (SAT)", "Oct. 25", "Nov. 1", "Nov. 8", "Nov 15"],
-        ["NOV. GROUP (SAT)", "Nov. 29", "Dec. 6", "Dec. 13", "Dec. 20"],
-        ["JAN. GROUP (SAT)", "Jan. 3", "Jan. 10", "Jan. 17", "Jan. 24"],
-        ["FEB. GROUP (SAT)", "Jan.31", "Feb. 7", "Feb. 14", "Feb. 21"]
+            ["", "1ST", "2ND", "3RD", "4TH"],
+            // ["MAR. GROUP (SAT)", "Mar. 8", "Mar. 15", "Mar. 22", "Mar. 29"],
+            // ["APR. GROUP (SAT)", "Apr. 5", "Apr. 12", "Apr. 19", "Apr. 26"],
+            // ["MAY GROUP (SAT)", "May 3", "May 10", "May 17", "May 24"],
+            // ["JUN. GROUP (SAT)","Jun. 14", "Jun. 21", "Jun. 28", "Jul. 5 "],
+            // ["JUL. GROUP (SAT)", "Jul. 12", "Jul. 19", "Jul. 26", "Aug. 2"],
+            // ["AUG. GROUP (SAT)", "Aug. 16", "Aug. 23", "Aug. 30", "Sept. 6"],
+            // ["SEPT. GROUP (SAT)", "Sept. 20", "Sept. 27", "Oct. 4", "Oct. 11"],
+            // ["OCT. GROUP (SAT)", "Oct. 25", "Nov. 1", "Nov. 8", "Nov 15"],
+            // ["NOV. GROUP (SAT)", "Nov. 29", "Dec. 6", "Dec. 13", "Dec. 20"],
+            ["JAN. GROUP (SAT)", "Jan. 3", "Jan. 10", "Jan. 17", "Jan. 24"],
+            ["FEB. GROUP (SAT)", "Jan.31", "Feb. 7", "Feb. 14", "Feb. 21"],
+            ["MAR. GROUP (SAT)", "Mar. 7", "Mar. 14", "Mar. 21", "Mar. 28"]
         ]
     },
 
@@ -43,12 +44,12 @@ const sched = [
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
-        ["", "1ST", "2ND", "3RD", "4TH", "5TH"],
-        // ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
-        // ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"],
-        ["JUN. GROUP (SUN)", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6","Jul. 13"],
-        ["SEPT. GROUP (SUN)", "Aug. 31", " Sept. 7", "Sept. 14", "Sept. 21", "Sept. 28"],
-        ["NOV. GROUP (SUN)", "Nov. 2", "Nov. 9", "Nov. 16", "Nov. 23", "Nov. 30"]
+            ["", "1ST", "2ND", "3RD", "4TH", "5TH"],
+            // ["JAN. GROUP (SAT)", "Jan. 4", "Jan. 11", "Jan. 19", "Jan. 26", "Feb. 2"],
+            // ["MAR. GROUP (SUN)", "Mar. 16", "Mar. 23", "Mar. 30", "Apr. 6", "Apr. 13"],
+            ["JUN. GROUP (SUN)", "Jun. 15", "Jun. 22", "Jun. 29", "Jul. 6","Jul. 13"],
+            ["SEPT. GROUP (SUN)", "Aug. 31", " Sept. 7", "Sept. 14", "Sept. 21", "Sept. 28"],
+            ["NOV. GROUP (SUN)", "Nov. 2", "Nov. 9", "Nov. 16", "Nov. 23", "Nov. 30"]
         ]
     },
 
@@ -63,17 +64,19 @@ const sched = [
         admissionRequirement: "Bachelor of Nursing Program from any country",
         intakeDescription: "Every day is an opportunity to learn, grow, and connect. We are excited to present our monthly schedule.",
         schedule: [
-        ["", "1ST", "2ND", "3RD",],
-        // ["MAR. GROUP" , "Mar. 19,", "Mar. 20", "Mar. 21"],
-        // ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"],
-        // ["MAY GROUP", "May. 6", "May. 7", "May. 8"],
-        // ["JUN. GROUP", "Jun. 24", "Jun. 25", "Jun. 26"],
-        // ["JUL. GROUP", "Jul. 15", "Jul. 16", "Jul. 17"],
-        // ["AUG. GROUP", "Aug. 11", "Aug. 12", "Aug. 13"],
-        ["SEPT. GROUP", "Sept. 9", "Sept. 10", "Sept. 11"],
-        ["OCT. GROUP", "Oct. 6", "Oct. 7", "Oct. 8"],
-        ["NOV. GROUP", "Nov. 18", "Nov. 19", "Nov. 20"],
-        ["JAN. GROUP", "Jan. 6", "Jan. 7", "Jan. 8"]
+            ["", "1ST", "2ND", "3RD",],
+            // ["MAR. GROUP" , "Mar. 19,", "Mar. 20", "Mar. 21"],
+            // ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"],
+            // ["MAY GROUP", "May. 6", "May. 7", "May. 8"],
+            // ["JUN. GROUP", "Jun. 24", "Jun. 25", "Jun. 26"],
+            // ["JUL. GROUP", "Jul. 15", "Jul. 16", "Jul. 17"],
+            // ["AUG. GROUP", "Aug. 11", "Aug. 12", "Aug. 13"],
+            // ["SEPT. GROUP", "Sept. 9", "Sept. 10", "Sept. 11"],
+            // ["OCT. GROUP", "Oct. 6", "Oct. 7", "Oct. 8"],
+            // ["NOV. GROUP", "Nov. 18", "Nov. 19", "Nov. 20"],
+            ["JAN. GROUP", "Jan. 6", "Jan. 7", "Jan. 8"],
+            ["FEB. GROUP" ,"Feb. 17", "Feb. 18", "Feb. 19"],
+            ["MAR. GROUP", "Mar. 3", "Mar. 4", "Mar. 5"]
         ]
     },
 

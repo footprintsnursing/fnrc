@@ -59,8 +59,8 @@ const Home = () => {
                     <p className={styles.info2}>Footprints Nursing Review Center is designed to support Internationally Educated Nurses (IENs) as they prepare for NCLEX, NCAS/IGA requirements in Canada.
     We combine structured review, mentorship, and practical exam strategies to help you move forward with confidence.</p>
                     <div className={styles.image_container}>
-                        <img src="images/canadian_choice_award_winner.PNG"/>
                         <img src="images/academic_consulting.PNG"/>
+                        <img src="images/canadian_choice_award_winner.PNG"/>
                     </div>
                 </div>
             </div>
