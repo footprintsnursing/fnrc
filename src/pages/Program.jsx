@@ -23,11 +23,11 @@ const sched = [
         // ["JUN. GROUP (SAT)","Jun. 14", "Jun. 21", "Jun. 28", "Jul. 5 "],
         // ["JUL. GROUP (SAT)", "Jul. 12", "Jul. 19", "Jul. 26", "Aug. 2"],
         // ["AUG. GROUP (SAT)", "Aug. 16", "Aug. 23", "Aug. 30", "Sept. 6"],
-        ["SEPT. GROUP (SAT)", "Sept. 20", "Sept. 27", "Oct. 4", "Oct. 11"],
+        // ["SEPT. GROUP (SAT)", "Sept. 20", "Sept. 27", "Oct. 4", "Oct. 11"],
         ["OCT. GROUP (SAT)", "Oct. 25", "Nov. 1", "Nov. 8", "Nov 15"],
         ["NOV. GROUP (SAT)", "Nov. 29", "Dec. 6", "Dec. 13", "Dec. 20"],
-        ["JAN. GROUP (SAT)", "Jan. 3", "Jan. 10", "Jan. 17", "Jan. 24"]
-
+        ["JAN. GROUP (SAT)", "Jan. 3", "Jan. 10", "Jan. 17", "Jan. 24"],
+        ["FEB. GROUP (SAT)", "Jan.31", "Feb. 7", "Feb. 14", "Feb. 21"]
         ]
     },
 

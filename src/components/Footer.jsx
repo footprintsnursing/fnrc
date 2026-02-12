@@ -3,6 +3,7 @@ import logo from "/images/fnrc_logo.svg";
 import styles from "../styles/Footer.module.css";
 
 const Footer = () => {
+    const currentYear = new Date().getFullYear();
     const [formData, setFormData] = useState({
         firstName: "",
         lastName: "",
@@ -104,7 +105,7 @@ const Footer = () => {
                     <div className={styles.info_container}>
                         <p className={styles.info_title}>Footprints Nursing Review Center: Supporting IENs Transition Into Canadian Nursing</p>
                         <br></br>
-                        <p className={styles.info_description}>For over 5 years, Footprints Nursing Review Center has been supporting internationally educated nurses across the globe, guiding them through their journey to becoming registered nurse in Canada. Wherever you are, our expertise and mentorship programs are here to help you achieve your nursing dreams and make a lasting impact in the Canadian healthcare system.</p>
+                        <p className={styles.info_description}>For over 7 years, Footprints Nursing Review Center has been supporting internationally educated nurses across the globe, guiding them through their journey to becoming registered nurse in Canada. Wherever you are, our expertise and mentorship programs are here to help you achieve your nursing dreams and make a lasting impact in the Canadian healthcare system.</p>
                     </div>
                     
                     <div id="contact-section" className={styles.contact_container}>
@@ -162,8 +163,8 @@ const Footer = () => {
                     <div className={styles.middle_right_container}>
                         <div className={styles.contact_holder}>
                             <p>Footprints Nursing Review Center</p>
-                            <p>379 Columbia Street </p>
-                            <p>New Westminster BC, V3L 5T6</p>
+                            <p>203 889 Carnarvon St. </p>
+                            <p>New Westminster BC, V3M 1G2</p>
                             <p>778-882-9159</p>
                             <p>footprintsnursing@gmail.com</p>
                         </div>
@@ -182,7 +183,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.lower_bg}>
-                <p className={styles.copyright}>Copyright © 2019 - 2025 Footprints Nursing Review Center, New Westminster, B.C., Canada</p>
+                <p className={styles.copyright}>Copyright © 2019 - {currentYear} Footprints Nursing Review Center, New Westminster, B.C., Canada</p>
             </div>
         </footer>
     );

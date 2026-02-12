@@ -44,6 +44,9 @@ hr{
 
 .home_first_sub_container {
     background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
     padding: 50px 20px;
     line-height: 2;
@@ -51,6 +54,25 @@ hr{
 
 .first_container {
     max-width: 1280px;
+}
+
+.image_container {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    width: 100%;
+    margin: 30px 0 0 0;
+    flex-wrap: wrap;
+
+}
+
+.image_container > img {
+    /* border: 2px solid red; */
+    flex: 1 1 calc(40% - 10px);
+    max-width: 350px;
+    /* height: auto; */
+    height: 350px;
+    /* width: calc(50% - 10px); */
 }
 
 .home_second_sub_container {

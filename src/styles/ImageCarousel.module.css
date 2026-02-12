@@ -1,20 +1,27 @@
 .carousel_img {
     object-fit: cover;
     height: 800px;
-    object-position: 60% 30%;
+    /* object-position: 60% 30%; */
+    object-position: top;
     max-width: 100%;
+}
+@media(min-width: 2560px) {
+    .carousel_img {
+        /* object-fit: cover; */
+        height: 1000px;
+    }
 }
 
 @media(max-width: 1920px) {
     .carousel_img {
-        object-fit: cover;
+        /* object-fit: cover; */
         height: 600px;
     }
 }
 
 @media(max-width: 1440px) {
     .carousel_img {
-        height: 400px;
+        height: 500px;
     }
 }
 

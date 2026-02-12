@@ -6,24 +6,24 @@ const ImageCarousel = () => {
   return (
     <div className={styles.carousel_container}>
       <Carousel autoPlay 
-        interval={3000} 
+        interval={6000} 
         swipeable={true} 
         infiniteLoop 
         showStatus={false} 
         showThumbs={false}
         transitionTime={2000} >
-        <div>
-          <img className={styles.carousel_img} src="/images/home_pic1.png" alt="Image 1" />
-        </div>
         {/* <div>
-          <img className={styles.carousel_img} src="/images/home_pic2.JPG" alt="Image 2" />
-        </div>
-        <div>
-          <img className={styles.carousel_img} src="/images/home_pic7.jpg" alt="Image 3" />
+          <img className={styles.carousel_img} src="/images/home_pic1.png" alt="Image 1" />
         </div> */}
         <div>
-          <img className={styles.carousel_img} src="/images/home_pic3.JPG" alt="Image 4" />
+          <img className={styles.carousel_img} src="/images/CCA.1.png" alt="Image 2" />
         </div>
+        <div>
+          <img className={styles.carousel_img} src="/images/CCA.2.png" alt="Image 3" />
+        </div>
+        {/* <div>
+          <img className={styles.carousel_img} src="/images/home_pic3.JPG" alt="Image 4" />
+        </div> */}
       </Carousel>
     </div>
   );

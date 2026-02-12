@@ -51,9 +51,18 @@ const Home = () => {
     return (
         <div className={styles.home_main_container}>
             <div className={styles.home_first_sub_container}>
-                <h1 className={styles.title2}>Supporting IEN&apos;s Transition into Canadian Nursing </h1>
-                <br></br>
-                <p className={styles.info2}>At Footprints Nursing Review Center, we dedicate ourselves to helping you pursue and achieve a nursing career in Canada.</p>
+                <div className={styles.first_container}>
+                    {/* <h1 className={styles.title2}>Supporting IEN&apos;s Transition into Canadian Nursing </h1> */}
+                    <h1 className={styles.title2}>Your Pathway to NCLEX & NCAS/IGA Success in Canada</h1>
+                    <br></br>
+                    {/* <p className={styles.info2}>At Footprints Nursing Review Center, we dedicate ourselves to helping you pursue and achieve a nursing career in Canada.</p> */}
+                    <p className={styles.info2}>Footprints Nursing Review Center is designed to support Internationally Educated Nurses (IENs) as they prepare for NCLEX, NCAS/IGA requirements in Canada.
+    We combine structured review, mentorship, and practical exam strategies to help you move forward with confidence.</p>
+                    <div className={styles.image_container}>
+                        <img src="images/canadian_choice_award_winner.PNG"/>
+                        <img src="images/academic_consulting.PNG"/>
+                    </div>
+                </div>
             </div>
             <div className={styles.home_second_sub_container}>
                 <div className={styles.second_container}>

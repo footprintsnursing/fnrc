@@ -57,7 +57,7 @@ const About = () => {
                 <br></br>
                 <p className={styles.about_info}>At Footprints Nursing Review Center, we walk beside you every step of the way on your path to nursing success in Canada. Whether you&apos;re preparing for the NCLEX, NCAS SLA, or CBA, we are committed to helping Internationally Educated Nurses (IENs) achieve their dreams with the best-in-class training and resources.</p>
                 <br></br>
-                <p className={styles.about_info}>With over 5 years of excellence, our review programs are designed to simplify the complex journey of nursing certification and licensure in Canada. Our tailored courses, combined with real-life insights and industry expertise, give you the confidence and skills you need to succeed.</p>
+                <p className={styles.about_info}>With over 7 years of excellence, our review programs are designed to simplify the complex journey of nursing certification and licensure in Canada. Our tailored courses, combined with real-life insights and industry expertise, give you the confidence and skills you need to succeed.</p>
             </div>
             <div className={styles.about_sub_upper2_container}>
                 <div className={styles.about_mission_container}>
@@ -97,7 +97,7 @@ const About = () => {
             <div className={styles.about_sub_lower3_container}>
                 <div className={styles.sub_lower3_bg}>
                     <p className={styles.about_info2}>
-                    Join the hundreds of successful IEN&apos;s who&apos;ve trusted 
+                    Join the thousands of successful IEN&apos;s who&apos;ve trusted 
                     <b> Footprints Nursing Review Center</b> to guide them to their Canadian nursing career.
                     </p>
                 </div>
