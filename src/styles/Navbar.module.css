@@ -19,6 +19,13 @@ nav {
     align-items: center;
     padding: 0 20px;
 }
+/* 
+.nav_container ul li:last-child {
+    border: 2px solid red;
+    padding: 10px;
+    background-color: #FFBD59;
+    color:#012B28;
+} */
 
 img {
     align-self: flex-start;
@@ -33,18 +40,18 @@ img {
     
 }
 
-.nav_menu > li {
+/* .nav_menu > li > a:not(:last-child) {
     font-size: 18px;
     font-weight: bold;
     text-decoration: none;
-    color: #fff !important;
+    color: #fff;
     cursor: pointer;
-}
+} */
 
-.nav_menu > li > a{
+/* .nav_menu > li > a{
     color: #fff;
 
-}
+} */
 
 
 .hamburger {
@@ -80,15 +87,60 @@ img {
     top: -8px;
 }
 
-.nav_menu a {
-    color: #ffffff;
-    transition: color 0.3s ease, background-color 0.3s ease;
+/* .nav_menu li:last-child {
+    border-radius: 10px;
 }
 
-.nav_menu a:hover {
+.nav_menu li:last-child:hover {
+    text-shadow: 0 0 1px currentColor;
+    background-color: #cf943c;
+}
+
+.nav_menu li:last-child > a {
+    color:green;
+} */
+
+/* Target the LAST menu item anchor */
+.nav_menu li:last-child > a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px; /* pill shape */
+  background-color: #FFBD59;
+  color: #012B28;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.nav_menu li:last-child > a:hover {
+  background-color: #cf943c;
+  color: #012B28;
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); */
+}
+
+
+.nav_menu li:not(:last-child) > a {
+    font-size: 18px;
+    /* font-weight: bold; */
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+}
+.nav_menu li:not(:last-child) > a:hover {
     color: #FFBD59;
     background-color: #012B28;
 }
+
+/* .nav_menu li:last-child > a:hover{
+    color: 
+} */
 
 
 @media (max-width: 768px) {
@@ -127,7 +179,7 @@ img {
         color: #fff;
     }
 
-    .menuOpen a {
+    /* .menuOpen a {
         color: #ffffff;
         transition: color 0.3s ease, background-color 0.3s ease;
     }
@@ -135,9 +187,69 @@ img {
     .menuOpen a:hover {
         color: #FFBD59;
         background-color: #012B28;
-    }
+    } */
 
     .hamburger {
         display: flex;
+    }
+/* 
+    .menuOpen li:last-child {
+    border-radius: 10px;
+    }  
+
+    .menuOpen li:last-child:hover {
+        text-shadow: 0 0 1px currentColor;
+        background-color: #cf943c;
+    }
+
+    .menuOpen li:last-child > a {
+        border: 2px solid #FFBD59;
+        color:green;
+        border-radius: 10px;
+        font-weight: 400;
+        border: 2px solid red;
+    } */
+
+    /* Target the LAST menu item anchor */
+.menuOpen li:last-child > a {
+  display: inline-block;
+  padding: 10px 18px;
+  border-radius: 999px; /* pill shape */
+  background-color: #FFBD59;
+  color: #012B28;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: 
+    background-color 0.3s ease,
+    color 0.3s ease,
+    transform 0.2s ease,
+    box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.menuOpen li:last-child > a:hover {
+  background-color: #cf943c;
+  color: #012B28;
+  /* transform: translateY(-2px); */
+  /* box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15); */
+}
+
+
+
+    /* .nav_menu a:hover {
+        color: #FFBD59;
+        background-color: #012B28;
+    } */
+    .menuOpen li:not(:last-child) > a {
+        font-size: 18px;
+        /* font-weight: bold; */
+        text-decoration: none;
+        color: #fff;
+        cursor: pointer;
+    }
+    .menuOpen li:not(:last-child) > a:hover {
+        color: #FFBD59;
+        background-color: #012B28;
     }
 }

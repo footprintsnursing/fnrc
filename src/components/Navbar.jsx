@@ -27,13 +27,13 @@ const Navbar = () => {
                     <div className={styles.line}></div>
                     <div className={styles.line}></div>
                 </div>
-                    <ul className={`${menuOpen ? styles.menuOpen : styles.nav_menu}`}>
-                        <li><a href="/">HOME</a></li>
-                        <li><a href="/program">PROGRAMS</a></li>
-                        <li><a href="/about">ABOUT</a></li>
-                        <li><a onClick={handleContactClick} href="#contact-section">CONTACT</a></li>
-                        <li><a href="https://footprintsnursingreviewcenter.talentlms.com/" target="_blank" rel="noopener noreferrer">MY PORTAL</a></li>
-                    </ul>
+                <ul className={`${menuOpen ? styles.menuOpen : styles.nav_menu}`}>
+                    <li><a href="/">HOME</a></li>
+                    <li><a href="/program">PROGRAMS</a></li>
+                    <li><a href="/about">ABOUT</a></li>
+                    <li><a onClick={handleContactClick} href="#contact-section">CONTACT</a></li>
+                    <li><a href="https://footprintsnursingreviewcenter.talentlms.com/" target="_blank" rel="noopener noreferrer">LMS Login</a></li>
+                </ul>
             </div>
         </nav>
     )
