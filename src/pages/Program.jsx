@@ -76,9 +76,10 @@ const sched = [
             // ["OCT. GROUP", "Oct. 6", "Oct. 7", "Oct. 8"],
             // ["NOV. GROUP", "Nov. 18", "Nov. 19", "Nov. 20"],
             // ["JAN. GROUP", "Jan. 6", "Jan. 7", "Jan. 8"],
-            ["FEB. GROUP" ,"Feb. 17", "Feb. 18", "Feb. 19"],
+            // ["FEB. GROUP" ,"Feb. 17", "Feb. 18", "Feb. 19"],
             ["MAR. GROUP", "Mar. 3", "Mar. 4", "Mar. 5"],
-            ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"]
+            ["APR. GROUP", "Apr. 8", "Apr. 9", "Apr. 10"],
+            ["MAY GROUP", "May 9", "May 16", "May 23", "May 30"]
         ]
     },
 
